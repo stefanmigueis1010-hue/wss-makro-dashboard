@@ -3,11 +3,11 @@
     "kw": 42,
     "week_range": "12.–16.10.2026",
     "run_type": "mittwoch",
-    "run_label": "Mi 14.10.2026, 16:18 Uhr",
-    "created_at": "2026-10-14T14:18:00.000Z",
+    "run_label": "Mi. 14.10.2026, 16:23 Uhr",
+    "created_at": "2026-10-14T14:23:06.479Z",
     "compare_label": "zu Montag",
     "compare_date": "2026-10-14",
-    "headline": "Nach dem heißen US-CPI (3,7 % y/y, Kern 2,6 %) sieht CME FedWatch eine Fed-Erhöhung am 28.10. bei ca. 44–49 %. Ob ein Oktober-Hike zur Mehrheitserwartung wird, hängt jetzt an PPI und Einzelhandelsumsätzen (Do 14:30) sowie an Warsh in Bangkok (Fr 05:30).",
+    "headline": "Größtes Risiko der Woche: Bestätigen PPI und Einzelhandelsumsätze (Do 14:30) den heißen CPI, könnte der Markt eine Fed-Erhöhung am 28.10. mehrheitlich einpreisen (FedWatch derzeit ca. 40–49 %); Warsh (Fr 05:30) kann das bestätigen oder abschwächen.",
     "methode": "Bias = COT-Richtung (±1) + COT-Aufbau (±1) + Notenbank (±2) + Regime (±1); LONG ab +2, SHORT ab −2."
   },
   "makro": [
@@ -41,7 +41,7 @@
     {
       "key": "spx",
       "label": "S&P 500",
-      "value": 7806,
+      "value": 7805,
       "unit": "",
       "date": "2026-10-13",
       "prev": 7806,
@@ -95,7 +95,7 @@
     {
       "key": "fedwatch",
       "label": "Hike-Wahrscheinlichkeit nächste FOMC (28.10.)",
-      "value": "ca. 44–49 %",
+      "value": "ca. 40–49 %",
       "unit": "",
       "date": "2026-10-14",
       "prev": "ca. 44–49 %",
@@ -106,21 +106,21 @@
     {
       "key": "dxy",
       "status": "BULLISH",
-      "detail": "DXY 102.2 (Schluss 13.10.) liegt über dem 20-Tage-EMA (101.48) und über dem 50-Tage-EMA (100.7). Nach dem heißen CPI am 14.10. stieg er um ca. 0,46 % auf rund 102.70, den höchsten Stand seit April 2025.",
+      "detail": "DXY 102.2 (Schluss 13.10.) liegt über dem 20-Tage-EMA (101.48) und über dem 50-Tage-EMA (100.7). Nach dem heißen CPI am 14.10. stieg er über 102.60 bis auf 102.72, den höchsten Stand seit etwa 18 Monaten; als nächste Bestätigungsmarke nennt ActionForex 102.77.",
       "tone": "bull",
       "prev_status": "BULLISH"
     },
     {
       "key": "regime",
       "status": "RISK-ON",
-      "detail": "+2 Punkte (Schluss 13.10.): VIX 15.27 und Saxo-Regime 'Low Vol Bull' (+2), S&P 500 7806 praktisch unverändert (0), Gold schwächer bei 4163 (+1), Yen leicht fester (−1). Das Bild ist wackelig: Intraday am 14.10. fiel der S&P 500 um ca. 0,6 % auf 7758, der VIX stieg auf 15,59, die 10Y-Rendite auf 5,30 % und Gold fiel um ca. 1,6 % auf 4112. Der Yen schwächte sich dabei ab, ein klares Risk-off-Signal ist das also nicht.",
+      "detail": "+2 Punkte (Schluss 13.10.): VIX 15.27 und Saxo-Regime 'Low Vol Bull' mit Contango (+2), S&P 500 7805 praktisch unverändert bei −0,02 % (0), Gold schwächer bei ca. 4163 (+1), Yen leicht fester (−1). Das Bild ist wackelig: Nach dem CPI am 14.10. fiel der S&P 500 intraday um ca. 0,45–0,6 %, die 10Y-Rendite stieg über 5,30 % und Edelmetalle fielen. Der Yen schwächte sich nicht ab, ein klares Risk-off-Signal ist das also nicht.",
       "tone": "bull",
       "prev_status": "RISK-ON"
     },
     {
       "key": "fed",
       "status": "HAWKISH",
-      "detail": "Die Fed hob am 16.09.2026 einstimmig auf 3,75–4,00 % an. Williams und Collins halten 2026 noch eine Erhöhung für angemessen, Barkin hält Handeln wegen hartnäckiger Inflation für sinnvoll. CPI September: 3,7 % y/y, Kern 0,3 % m/m bzw. 2,6 % y/y, beides über Konsens. Die FedWatch-Wahrscheinlichkeit für eine Erhöhung am 28.10. stieg von 21,6 % auf 43,7–49,3 %.",
+      "detail": "Die Fed hob am 16.09.2026 einstimmig auf 3,75–4,00 % an. Williams hält 2026 noch eine Erhöhung für angemessen, Hammack klingt hawkish; Bowman sieht dagegen keine Dringlichkeit (14.10., Bangkok). CPI September: 3,7 % y/y, Kern 0,3 % m/m bzw. 2,6 % y/y, beides über Konsens. FedWatch für eine Erhöhung am 28.10.: 43,7–49,3 % nach 22,1 % am Vortag (Reuters: ca. 40 %).",
       "tone": "bear",
       "prev_status": "HAWKISH"
     }
@@ -132,7 +132,7 @@
       "time": "14:30",
       "event": "US-Verbraucherpreise (CPI) September",
       "region": "USD",
-      "note": "Veröffentlicht: 3,7 % y/y (Konsens 3,6 %), 0,6 % m/m; Kern 0,3 % m/m bzw. 2,6 % y/y – über den Erwartungen"
+      "note": "Veröffentlicht: 3,7 % y/y (Konsens 3,6 %), 0,6 % m/m; Kern 0,3 % m/m (Konsens 0,2 %) bzw. 2,6 % y/y (Konsens 2,5 %)"
     },
     {
       "day": "Do",
@@ -156,7 +156,7 @@
       "time": "14:30",
       "event": "US-Einzelhandelsumsätze September",
       "region": "USD",
-      "note": ""
+      "note": "Laut Babypips-Wochenvorschau ein Hauptereignis der Woche"
     },
     {
       "day": "Do",
@@ -165,6 +165,14 @@
       "event": "US-Erzeugerpreise (PPI) September",
       "region": "USD",
       "note": "Nach dem heißen CPI besonders wichtig für einen Oktober-Hike"
+    },
+    {
+      "day": "Do",
+      "date": "2026-10-15",
+      "time": "—",
+      "event": "G20-Finanzminister und Notenbankchefs in Bangkok (u. a. EZB-Präsidentin Lagarde)",
+      "region": "EUR",
+      "note": "Uhrzeit unbekannt; Lagarde sagte am 14.10., sie sehe noch keine Zweitrundeneffekte"
     },
     {
       "day": "Do",
@@ -188,7 +196,7 @@
       "time": "05:30",
       "event": "Fed-Chef Warsh – Fireside Chat mit IMF-Chefin Georgieva (Bangkok)",
       "region": "USD",
-      "note": "Laut Fed-Kalender Do 15.10., 23:30 Uhr EDT = Fr 05:30 Uhr MESZ"
+      "note": "Laut Fed-Kalender Do 15.10., 23:30 Uhr EDT = Fr 05:30 Uhr MESZ; erste Warsh-Aussagen nach dem heißen CPI"
     }
   ],
   "cot": {
@@ -267,7 +275,7 @@
       "bank": "Fed",
       "stance": "HAWKISH",
       "changed": false,
-      "reason": "Die Fed hob am 16.09.2026 einstimmig auf 3,75–4,00 % an. Nach dem CPI vom 14.10. (3,7 % y/y, Kern 2,6 %), der über den Erwartungen lag, sieht CME FedWatch die Wahrscheinlichkeit einer weiteren Erhöhung am 28.10. bei 43,7–49,3 %; Barkin, Williams und Collins signalisieren weitere Straffung.",
+      "reason": "Die Fed hob am 16.09.2026 einstimmig auf 3,75–4,00 % an. Nach dem CPI vom 14.10. (3,7 % y/y, Kern 2,6 %), der über den Erwartungen lag, sieht CME FedWatch die Wahrscheinlichkeit einer weiteren Erhöhung am 28.10. bei 43,7–49,3 %. Williams und Hammack signalisieren weitere Straffung, Bowman sieht keine Dringlichkeit.",
       "date": "2026-10-14",
       "source": "https://seekingalpha.com/news/4652903-october-rate-hike-probability-pops-to-49-now-a-coin-flip-chance-after-cpi-data"
     },
@@ -276,9 +284,9 @@
       "bank": "EZB",
       "stance": "HAWKISH",
       "changed": false,
-      "reason": "Die EZB hob am 10.09.2026 die Leitzinsen um 25 Bp an (Einlagensatz 2,50 %) und legt sich auf keinen weiteren Zinspfad fest.",
-      "date": "2026-09-10",
-      "source": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.en.html"
+      "reason": "Die EZB hob am 10.09.2026 um 25 Bp an (Einlagensatz 2,50 %). Lagarde sieht am 14.10. noch keine Zweitrundeneffekte, will aber nicht warten, bis sie voll sichtbar sind; der Ton ist wachsam, nicht aggressiv.",
+      "date": "2026-10-14",
+      "source": "https://www.fxstreet.com/news/lagarde-speech-were-not-seeing-any-second-round-effects-yet-202610140236"
     },
     {
       "currency": "GBP",
@@ -294,7 +302,7 @@
       "bank": "BoJ",
       "stance": "HAWKISH",
       "changed": false,
-      "reason": "Die BoJ hob am 18.09.2026 auf 1,25 % an und bleibt im Zinserhöhungszyklus. Laut Bloomberg tendiert sie aber gegen eine direkte Folgeerhöhung im Oktober; der Markt preist für Oktober ca. 10 % ein, für Dezember ca. 88 %.",
+      "reason": "Die BoJ hob am 18.09.2026 auf 1,25 % an und bleibt im Zinserhöhungszyklus. Laut Bloomberg tendiert sie aber gegen eine direkte Folgeerhöhung im Oktober, zumal der PPI mit 6,8 % y/y unter der Prognose lag; der Markt preist für Oktober ca. 10 % ein, für Dezember ca. 88 %.",
       "date": "2026-10-13",
       "source": "https://www.bloomberg.com/news/articles/2026-10-13/boj-is-said-to-lean-against-back-to-back-rate-hike-in-october"
     },
@@ -340,7 +348,7 @@
       "currency": "USD",
       "score": 4,
       "bias": "LONG",
-      "reason": "COT netto long (+1), Longs ausgebaut (+1), Fed hawkish, bestätigt durch heißen CPI und den FedWatch-Sprung auf ca. 44–49 % (+2), RISK-ON (0) → +4 Punkte.",
+      "reason": "COT netto long (+1), Longs ausgebaut (+1), Fed hawkish, bestätigt durch heißen CPI und den FedWatch-Sprung auf ca. 40–49 % (+2), RISK-ON (0) → +4 Punkte; Bowman bremst leicht.",
       "score_details": {
         "cot_richtung": 1,
         "cot_aufbau": 1,
@@ -355,7 +363,7 @@
       "currency": "JPY",
       "score": 3,
       "bias": "LONG",
-      "reason": "COT netto long (+1), Longs ausgebaut (+1), BoJ hawkish (+2), RISK-ON (−1) → +3 Punkte; gebremst wird das durch den Bericht, dass die BoJ eher keinen Oktober-Hike will, und durch USD/JPY über 158.",
+      "reason": "COT netto long (+1), Longs ausgebaut (+1), BoJ hawkish (+2), RISK-ON (−1) → +3 Punkte; gebremst wird das dadurch, dass die BoJ eher keinen Oktober-Hike will, und durch USD/JPY über 158.",
       "score_details": {
         "cot_richtung": 1,
         "cot_aufbau": 1,
@@ -400,7 +408,7 @@
       "currency": "EUR",
       "score": 0,
       "bias": "NEUTRAL",
-      "reason": "COT netto short (−1), Shorts ausgebaut (−1), EZB hawkish (+2), RISK-ON (0) → 0 Punkte; EUR/USD nach dem CPI auf dem tiefsten Stand seit Mai 2025. ⚠️ COT extrem positioniert – Umkehrgefahr.",
+      "reason": "COT netto short (−1), Shorts ausgebaut (−1), EZB hawkish (+2), RISK-ON (0) → 0 Punkte; Lagarde vorsichtig (keine Zweitrundeneffekte), EUR/USD nach dem CPI auf einem 17-Monats-Tief. ⚠️ COT extrem positioniert – Umkehrgefahr.",
       "score_details": {
         "cot_richtung": -1,
         "cot_aufbau": -1,
@@ -415,7 +423,7 @@
       "currency": "CAD",
       "score": -1,
       "bias": "NEUTRAL",
-      "reason": "COT netto short (−1), Shorts ausgebaut (−1), BoC neutral (0), RISK-ON (+1) → −1 Punkt.",
+      "reason": "COT netto short (−1), Shorts ausgebaut (−1), BoC neutral (0), RISK-ON (+1) → −1 Punkt; der hohe Ölpreis stützt etwas.",
       "score_details": {
         "cot_richtung": -1,
         "cot_aufbau": -1,
@@ -445,7 +453,7 @@
       "currency": "GBP",
       "score": -2,
       "bias": "SHORT",
-      "reason": "COT netto short (−1), Shorts ausgebaut (−1), BoE neutral (0), RISK-ON (0) → −2 Punkte; Bailey spricht Fr 04:00. ⚠️ COT extrem positioniert – Umkehrgefahr.",
+      "reason": "COT netto short (−1), Shorts ausgebaut (−1), BoE neutral (0), RISK-ON (0) → −2 Punkte; BIP Do 08:00 und Bailey Fr 04:00 als Auslöser. ⚠️ COT extrem positioniert – Umkehrgefahr.",
       "score_details": {
         "cot_richtung": -1,
         "cot_aufbau": -1,
@@ -461,12 +469,12 @@
     {
       "pair": "GBPUSD",
       "direction": "SHORT",
-      "reason": "GBP −2 (#8) gegen USD +4 (#1): 6 Punkte Differenz; die Erwartung einer Fed-Erhöhung stieg nach dem heißen CPI auf ca. 44–49 %. ⚠️ GBP extrem positioniert."
+      "reason": "GBP −2 (#8) gegen USD +4 (#1): 6 Punkte Differenz; nach dem heißen CPI ist ein Fed-Hike im Oktober etwa ein Münzwurf, die BoE bleibt neutral. ⚠️ GBP extrem positioniert."
     },
     {
       "pair": "USDCHF",
       "direction": "LONG",
-      "reason": "USD +4 (#1) gegen CHF −2 (#7): 6 Punkte Differenz; der Zinsabstand wächst, weil die SNB bei 0 % bleibt und eine Fed-Erhöhung im Oktober möglich ist."
+      "reason": "USD +4 (#1) gegen CHF −2 (#7): 6 Punkte Differenz; der Zinsabstand wächst, weil die SNB bei 0 % bleibt und eine Fed-Erhöhung am 28.10. zu ca. 40–49 % eingepreist ist."
     },
     {
       "pair": "GBPJPY",
@@ -490,12 +498,20 @@
   ],
   "sources": [
     {
-      "title": "Babypips Financial & Forex Market Recap – 2026-10-13",
+      "title": "Babypips Financial & Forex Market Recap – 2026-10-13 (DXY 102.2, 10Y 5.22 %, S&P 500 7806)",
       "url": "https://www.babypips.com/news/financial-forex-market-recap-2026-10-13"
     },
     {
-      "title": "Saxo Options Brief – 2026-10-14 (VIX 15.27, Low Vol Bull)",
+      "title": "Babypips Fundies Cheat Sheet Oct. 12 – 16, 2026",
+      "url": "https://www.babypips.com/analysis/fundies-cheat-sheet-2026-10-12-cpi-warsh-yields-oil"
+    },
+    {
+      "title": "Saxo Options Brief – 2026-10-14 (VIX 15.27, Low Vol Bull, S&P 500 7805.45)",
       "url": "https://www.home.saxo/content/articles/options/sectors-pull-apart-the-index-holds---options-brief---14-october-2026-14102026"
+    },
+    {
+      "title": "Saxo Market Quick Take – 2026-10-14",
+      "url": "https://www.home.saxo/content/articles/macro/market-quick-take---chip-stocks-steady-in-asia-before-us-inflation---14-october-2026-14102026"
     },
     {
       "title": "FXStreet US Dollar Index Forecast (20-Tage-EMA 101.48)",
@@ -506,12 +522,16 @@
       "url": "https://www.fxstreet.com/news/dollar-index-slips-from-its-18-month-high-before-us-cpi-202610131604"
     },
     {
+      "title": "FXStreet DXY Forecast (PPI Do, Warsh Fr) – 2026-10-14",
+      "url": "https://www.fxstreet.com/news/us-dollar-index-price-forecast-dxy-holds-above-10170-pivotal-support-ahead-of-us-cpi-202610140725"
+    },
+    {
       "title": "Trading Economics US-Dollar-Index (Schluss 13.10.)",
       "url": "https://tradingeconomics.com/united-states/currency"
     },
     {
-      "title": "FXStreet Euro plunges to 17-month low (DXY 102.70, Hike-Wahrscheinlichkeit 47 %) – 2026-10-14",
-      "url": "https://www.fxstreet.com/news/euro-plunges-to-17-month-low-as-hot-us-inflation-fuels-fed-rate-hike-bets-202610141306"
+      "title": "ActionForex – Dollar Breaks Higher as Core CPI Pushes October Fed Hike Odds Above 40 % – 2026-10-14",
+      "url": "https://www.actionforex.com/action-insight/market-overview/657507-dollar-breaks-higher-as-core-cpi-pushes-october-fed-hike-odds-above-40/"
     },
     {
       "title": "FXStreet COT report – 2026-10-09",
@@ -526,16 +546,28 @@
       "url": "https://panews.io/articles/01a13a80-c997-703a-a341-58f96b33edb8"
     },
     {
-      "title": "Yahoo Finance Live (Intraday 14.10.: S&P 500, VIX, 10Y, Gold)",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-14-dow-sp-500-nasdaq-081136597.html"
+      "title": "Reuters via Yahoo Finance – Fed rate hike seen more likely after inflation data – 2026-10-14",
+      "url": "https://finance.yahoo.com/economy/policy/articles/fed-rate-hike-seen-more-123957184.html"
+    },
+    {
+      "title": "Asianet Newsable – Bowman sees no urgent need for further rate action – 2026-10-14",
+      "url": "https://newsable.asianetnews.com/markets/fed-s-bowman-sees-no-urgent-need-for-further-rate-action-wants-time-to-assess-after-september-hike-articleshow-8ybnss1"
     },
     {
       "title": "TheStreet Stock Market Today – 2026-10-14 (CPI-Details)",
       "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-14-2026"
     },
     {
+      "title": "Yahoo Finance Live (Intraday 14.10.: S&P 500, VIX, 10Y, Gold)",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-14-dow-sp-500-nasdaq-081136597.html"
+    },
+    {
       "title": "investingLive – Barkin, Williams, Collins – 2026-10-14",
       "url": "https://investinglive.com/central-banks/icymi-three-fed-officials-signal-inflation-fight-continues-williams-sees-no-2027-hike/"
+    },
+    {
+      "title": "FXStreet – Lagarde speech: We're not seeing any second round effects yet – 2026-10-14",
+      "url": "https://www.fxstreet.com/news/lagarde-speech-were-not-seeing-any-second-round-effects-yet-202610140236"
     },
     {
       "title": "Bloomberg – BOJ Is Said to Lean Against Back-to-Back Rate Hike in October – 2026-10-13",
@@ -550,16 +582,12 @@
       "url": "https://www.fxstreet.com/news/aud-usd-price-forecast-declining-20-day-ema-builds-case-for-more-downside-202610130652"
     },
     {
-      "title": "FXStreet DXY Forecast (PPI Do, Warsh Fr) – 2026-10-14",
-      "url": "https://www.fxstreet.com/news/us-dollar-index-price-forecast-dxy-holds-above-10170-pivotal-support-ahead-of-us-cpi-202610140725"
-    },
-    {
       "title": "Bank of England Upcoming Events (Bailey 16.10., 3am BST)",
       "url": "https://www.bankofengland.co.uk/events/upcoming-events"
     },
     {
-      "title": "Christophe Barraud Week Ahead (Breman) – 2026-10-11",
-      "url": "https://christophe-barraud.com/week-ahead-imf-world-bank-meetings-u-s-china-and-india-inflation-reports-lagarde-and-warsh-speeches-fed-beige-book-rba-minutes-iea-and-opec-reports-u-s-bank-results"
+      "title": "Christophe Barraud Week Ahead (Breman, G20/Lagarde) – 2026-10-11",
+      "url": "https://www.christophe-barraud.com/week-ahead-imf-world-bank-meetings-u-s-china-and-india-inflation-reports-lagarde-and-warsh-speeches-fed-beige-book-rba-minutes-iea-and-opec-reports-u-s-bank-results/"
     },
     {
       "title": "Federal Reserve Schedule of Public Appearances (Warsh) – 2026-10-13",
