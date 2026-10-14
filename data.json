@@ -1,4 +1,14 @@
 {
+  "meta": {
+    "kw": 43,
+    "week_range": "19.–23.10.2026",
+    "run_type": "beispiel",
+    "run_label": "Mi 14.10.2026, 11:40 Uhr (Beispieldaten, vor US-CPI)",
+    "created_at": "2026-10-14T09:40:00Z",
+    "compare_label": "zur Vorwoche",
+    "compare_date": "2026-10-07",
+    "headline": "Achtung: US-CPI am 14.10. um 14:30 kann Fed-Erwartung und USD-Bias kippen."
+  },
   "makro": [
     {
       "key": "dxy",
@@ -6,44 +16,44 @@
       "value": 102.2,
       "unit": "",
       "date": "2026-10-13",
-      "prev": 102.2,
-      "prev_date": "2026-10-13"
+      "prev": 102.3,
+      "prev_date": "2026-10-07"
     },
     {
       "key": "dxy_ma20",
-      "label": "DXY 20-Tage-EMA",
-      "value": 101.48,
+      "label": "DXY 20-Tage-Schnitt",
+      "value": null,
       "unit": "",
-      "date": "2026-10-13",
-      "prev": 101.48,
-      "prev_date": "2026-10-13"
+      "date": null,
+      "prev": null,
+      "prev_date": null
     },
     {
       "key": "dxy_ma50",
-      "label": "DXY 50-Tage-EMA",
-      "value": 100.7,
+      "label": "DXY 50-Tage-Schnitt",
+      "value": null,
       "unit": "",
-      "date": "2026-10-13",
-      "prev": 100.7,
-      "prev_date": "2026-10-13"
+      "date": null,
+      "prev": null,
+      "prev_date": null
     },
     {
       "key": "spx",
       "label": "S&P 500",
-      "value": 7805.45,
+      "value": 7806,
       "unit": "",
       "date": "2026-10-13",
-      "prev": 7805.45,
-      "prev_date": "2026-10-13"
+      "prev": 7803,
+      "prev_date": "2026-10-07"
     },
     {
       "key": "vix",
       "label": "VIX",
-      "value": 15.27,
+      "value": 15.52,
       "unit": "",
-      "date": "2026-10-13",
-      "prev": 15.27,
-      "prev_date": "2026-10-13"
+      "date": "2026-10-05",
+      "prev": null,
+      "prev_date": null
     },
     {
       "key": "us10y",
@@ -51,8 +61,8 @@
       "value": 5.22,
       "unit": "%",
       "date": "2026-10-13",
-      "prev": 5.22,
-      "prev_date": "2026-10-13"
+      "prev": 5.28,
+      "prev_date": "2026-10-07"
     },
     {
       "key": "gold",
@@ -60,17 +70,17 @@
       "value": 4163,
       "unit": "$",
       "date": "2026-10-13",
-      "prev": 4163,
-      "prev_date": "2026-10-13"
+      "prev": 4112,
+      "prev_date": "2026-10-07"
     },
     {
       "key": "usdjpy",
       "label": "USD/JPY",
-      "value": null,
+      "value": 158.65,
       "unit": "",
-      "date": null,
-      "prev": 158.29,
-      "prev_date": "2026-10-13"
+      "date": "2026-10-12",
+      "prev": 158.04,
+      "prev_date": "2026-10-07"
     },
     {
       "key": "fedfunds",
@@ -78,214 +88,127 @@
       "value": "3,75–4,00 %",
       "unit": "",
       "date": "2026-09-16",
-      "prev": "3,75–4,00 %",
-      "prev_date": "2026-09-16"
+      "prev": null,
+      "prev_date": null
     },
     {
       "key": "fedwatch",
       "label": "Hike-Wahrscheinlichkeit nächste FOMC (28.10.)",
-      "value": "ca. 44 %",
+      "value": "ca. 17–25 %",
       "unit": "",
-      "date": "2026-10-14",
-      "prev": "ca. 44 %",
-      "prev_date": "2026-10-14"
+      "date": "2026-10-13",
+      "prev": null,
+      "prev_date": null
     }
   ],
-  "notenbanken": [
+  "status": [
     {
-      "currency": "USD",
-      "bank": "Fed",
-      "stance": "HAWKISH",
-      "changed": false,
-      "reason": "Die Fed erhöhte im September auf 3,75–4,00 %; laut dem am 07.10. veröffentlichten Protokoll hielten die meisten Mitglieder eine weitere Erhöhung bis Jahresende für angemessen.",
-      "date": "2026-10-07",
-      "source": "https://www.babypips.com/news"
+      "key": "dxy",
+      "status": "NEUTRAL",
+      "tone": "neutral",
+      "detail": "Seitwärts um 102. 20/50-Tage-Schnitt: N/A.",
+      "prev_status": null
     },
     {
-      "currency": "EUR",
-      "bank": "EZB",
-      "stance": "HAWKISH",
-      "changed": false,
-      "reason": "Die EZB erhöhte am 10.09. die Leitzinsen um 25 Bp (Einlagesatz 2,50 %), die zweite Erhöhung 2026, und erwartet länger deutlich überhöhte Inflation.",
-      "date": "2026-09-10",
-      "source": ""
+      "key": "regime",
+      "status": "RISK-ON",
+      "tone": "bull",
+      "detail": "S&P 500 nahe Rekord, VIX ~15,5, Gold und Yen schwächer. Fragil: 10Y über 5,2 %, Öl ~95 $, Nahost-Risiken.",
+      "prev_status": null
     },
     {
-      "currency": "GBP",
-      "bank": "BoE",
-      "stance": "NEUTRAL",
-      "changed": false,
-      "reason": "Die BoE hielt den Leitzins am 17.09. mit 6:3 Stimmen bei 3,75 % (drei Stimmen für eine Erhöhung) und sieht eine Erhöhung nur bei anhaltendem Energiepreisdruck als wahrscheinlicher an.",
-      "date": "2026-09-17",
-      "source": ""
-    },
-    {
-      "currency": "JPY",
-      "bank": "BoJ",
-      "stance": "HAWKISH",
-      "changed": false,
-      "reason": "Die BoJ erhöhte am 18.09. mit 7:2 Stimmen um 25 Bp auf 1,25 %, den höchsten Stand seit 1995, wegen Aufwärtsrisiken bei der Inflation.",
-      "date": "2026-09-18",
-      "source": ""
-    },
-    {
-      "currency": "CHF",
-      "bank": "SNB",
-      "stance": "NEUTRAL",
-      "changed": false,
-      "reason": "Die SNB hielt den Leitzins am 24.09. zum fünften Mal in Folge bei 0 % und hob ihre Inflationsprognosen leicht an.",
-      "date": "2026-09-24",
-      "source": ""
-    },
-    {
-      "currency": "CAD",
-      "bank": "BoC",
-      "stance": "NEUTRAL",
-      "changed": false,
-      "reason": "Die BoC hielt am 02.09. den Leitzins zum siebten Mal in Folge bei 2,25 % und verwies auf gestiegene Aufwärtsrisiken bei der Inflation.",
-      "date": "2026-09-02",
-      "source": ""
-    },
-    {
-      "currency": "AUD",
-      "bank": "RBA",
-      "stance": "HAWKISH",
-      "changed": false,
-      "reason": "Laut dem am 13.10. veröffentlichten Protokoll erhöhte die RBA im September einstimmig um 25 Bp auf 4,60 % und hält sich weitere Erhöhungen offen.",
-      "date": "2026-10-13",
-      "source": "https://www.babypips.com/news/financial-forex-market-recap-2026-10-13"
-    },
-    {
-      "currency": "NZD",
-      "bank": "RBNZ",
-      "stance": "HAWKISH",
-      "changed": false,
-      "reason": "Die RBNZ erhöhte am 02.09. den OCR um 25 Bp auf 2,75 % (zweite Erhöhung in Folge) und erklärte, sie müsse ihn in diesem Jahr möglicherweise weiter anheben.",
-      "date": "2026-09-02",
-      "source": "https://www.rbnz.govt.nz/monetary-policy/about-monetary-policy/the-official-cash-rate"
+      "key": "fed",
+      "status": "HAWKISH",
+      "tone": "bear",
+      "detail": "Zinserhöhung am 16.09., Mehrheit sieht weiteren Schritt bis Jahresende. Oktober-Hike laut Markt eher unwahrscheinlich.",
+      "prev_status": null
     }
   ],
   "termine": [
     {
-      "day": "Mi",
-      "date": "2026-10-14",
-      "time": "07:30",
-      "event": "Rede von BoE-Gouverneur Bailey (Bangkok)",
-      "region": "GBP",
-      "note": "Zeit laut Wochenvorschau, Impact nicht verifiziert"
-    },
-    {
-      "day": "Mi",
-      "date": "2026-10-14",
-      "time": "08:05",
-      "event": "Rede von BoC-Gouverneur Macklem (IIF Bangkok)",
-      "region": "CAD",
-      "note": "Zeit laut Wochenvorschau, Impact nicht verifiziert"
-    },
-    {
-      "day": "Mi",
-      "date": "2026-10-14",
-      "time": "10:30",
-      "event": "Rede von EZB-Präsidentin Lagarde (Bangkok)",
-      "region": "EUR",
-      "note": "Bereits erfolgt"
-    },
-    {
-      "day": "Mi",
-      "date": "2026-10-14",
-      "time": "14:30",
-      "event": "US-Verbraucherpreise (VPI) September",
-      "region": "USD",
-      "note": "Veröffentlicht: 3,7 % J/J (erwartet 3,6 %)"
-    },
-    {
-      "day": "Do",
-      "date": "2026-10-15",
-      "time": "02:30",
-      "event": "Australien Arbeitsmarktbericht September (Beschäftigung, Arbeitslosenquote)",
-      "region": "AUD",
-      "note": "Übliche Uhrzeit; Prognose +20,0K, Quote 4,6 %"
-    },
-    {
-      "day": "Do",
-      "date": "2026-10-15",
-      "time": "06:30",
-      "event": "Rede von SNB-Präsident Schlegel",
-      "region": "CHF",
-      "note": "Zeit laut Wochenvorschau, Impact nicht verifiziert"
-    },
-    {
-      "day": "Do",
-      "date": "2026-10-15",
-      "time": "08:00",
-      "event": "UK BIP August (M/M)",
-      "region": "GBP",
-      "note": "Prognose −0,1 % M/M"
-    },
-    {
-      "day": "Do",
-      "date": "2026-10-15",
-      "time": "14:30",
-      "event": "US-Einzelhandelsumsätze September",
-      "region": "USD",
-      "note": "Prognose +0,3 % M/M"
-    },
-    {
-      "day": "Do",
-      "date": "2026-10-15",
-      "time": "14:30",
-      "event": "US-Erzeugerpreise (PPI) September",
-      "region": "USD",
-      "note": "Prognose +0,5 % M/M"
-    },
-    {
-      "day": "Fr",
-      "date": "2026-10-16",
+      "day": "Mo",
+      "date": "2026-10-19",
       "time": "04:00",
-      "event": "Rede von BoE-Gouverneur Bailey (IIF Bangkok)",
-      "region": "GBP",
-      "note": "Zeit laut Wochenvorschau"
+      "event": "China BIP Q3",
+      "region": "CNY",
+      "note": "Einige Quellen nennen 20.10."
     },
     {
-      "day": "Fr",
-      "date": "2026-10-16",
-      "time": "05:30",
-      "event": "Rede von Fed-Chef Warsh (Bangkok)",
-      "region": "USD",
-      "note": "Zeit laut Wochenvorschau"
-    },
-    {
-      "day": "Fr",
-      "date": "2026-10-16",
-      "time": "06:15",
-      "event": "Rede von BoC-Gouverneur Macklem (Panel KI/Weltwirtschaft)",
+      "day": "Di",
+      "date": "2026-10-20",
+      "time": "14:30",
+      "event": "Kanada Verbraucherpreise (CPI)",
       "region": "CAD",
-      "note": "Zeit laut Wochenvorschau, Impact nicht verifiziert"
+      "note": ""
+    },
+    {
+      "day": "Mi",
+      "date": "2026-10-21",
+      "time": "08:00",
+      "event": "UK Verbraucherpreise (CPI)",
+      "region": "GBP",
+      "note": ""
+    },
+    {
+      "day": "Fr",
+      "date": "2026-10-23",
+      "time": "01:30",
+      "event": "Japan Verbraucherpreise (CPI)",
+      "region": "JPY",
+      "note": "Übliche Uhrzeit"
+    },
+    {
+      "day": "Fr",
+      "date": "2026-10-23",
+      "time": "10:00",
+      "event": "Eurozone Flash-PMI",
+      "region": "EUR",
+      "note": "Übliche Uhrzeit"
+    },
+    {
+      "day": "Fr",
+      "date": "2026-10-23",
+      "time": "10:30",
+      "event": "UK Flash-PMI",
+      "region": "GBP",
+      "note": "Übliche Uhrzeit"
+    },
+    {
+      "day": "Fr",
+      "date": "2026-10-23",
+      "time": "15:45",
+      "event": "US Flash-PMI",
+      "region": "USD",
+      "note": ""
     }
   ],
   "cot": {
     "stichtag": "2026-10-06",
     "published": "2026-10-09",
+    "unchanged_since_last_run": false,
     "rows": [
       {
         "currency": "USD",
         "net": 12011,
         "change": 130,
         "cot_index": 45,
-        "positioning": "Netto long, ausgebaut"
+        "extreme": false,
+        "positioning": "Netto long, leicht zunehmend"
       },
       {
         "currency": "EUR",
         "net": -99332,
         "change": -36076,
         "cot_index": 100,
-        "positioning": "Netto short, ausgebaut"
+        "extreme": true,
+        "positioning": "Netto short, stark ausgebaut"
       },
       {
         "currency": "GBP",
         "net": -97611,
         "change": -6536,
         "cot_index": 86,
+        "extreme": true,
         "positioning": "Netto short, ausgebaut"
       },
       {
@@ -293,6 +216,7 @@
         "net": 62325,
         "change": 6885,
         "cot_index": 22,
+        "extreme": false,
         "positioning": "Netto long, ausgebaut"
       },
       {
@@ -300,13 +224,15 @@
         "net": -23740,
         "change": 877,
         "cot_index": 26,
-        "positioning": "Netto short, reduziert"
+        "extreme": false,
+        "positioning": "Netto short, leicht abgebaut"
       },
       {
         "currency": "CAD",
         "net": -90163,
         "change": -11492,
         "cot_index": 51,
+        "extreme": false,
         "positioning": "Netto short, ausgebaut"
       },
       {
@@ -314,81 +240,123 @@
         "net": -98588,
         "change": -35349,
         "cot_index": 100,
-        "positioning": "Netto short, ausgebaut"
+        "extreme": true,
+        "positioning": "Netto short, stark ausgebaut"
       },
       {
         "currency": "NZD",
         "net": -29346,
         "change": -12031,
         "cot_index": 53,
+        "extreme": false,
         "positioning": "Netto short, ausgebaut"
       }
     ]
   },
-  "headline": "Nach dem über den Erwartungen liegenden US-VPI (3,7 % J/J) liegt das Hauptrisiko bei den US-Einzelhandels- und Erzeugerpreisdaten am Donnerstag sowie der Rede von Fed-Chef Warsh am Freitag, während FedWatch die Wahrscheinlichkeit einer Zinserhöhung am 28.10. auf rund 44 % sieht.",
-  "sources": [
+  "bias": [
     {
-      "title": "Babypips Financial & Forex Market Recap – 2026-10-13",
-      "url": "https://www.babypips.com/news/financial-forex-market-recap-2026-10-13"
+      "currency": "AUD",
+      "rank": 1,
+      "bias": "LONG",
+      "reason": "RBA hat auf 4,60 % erhöht und lässt weitere Schritte offen, Risk-On stützt; Spekulanten extrem short (Squeeze-Potenzial).",
+      "prev_bias": null,
+      "prev_rank": null
     },
     {
-      "title": "CNBC / AP S&P-500-Schluss – 2026-10-13",
-      "url": "https://www.10tv.com/article/syndication/associatedpress/how-major-us-stock-indexes-fared-tuesday-10132026/616-79e921f9-f51b-49be-8ffb-40f942bd73c3"
+      "currency": "USD",
+      "rank": 2,
+      "bias": "LONG",
+      "reason": "Fed bleibt hawkish, Renditen über 5 %, leicht steigende Netto-Longs; Oktober-Hike kaum eingepreist.",
+      "prev_bias": null,
+      "prev_rank": null
     },
     {
-      "title": "Saxo Options Brief – 2026-10-14",
-      "url": "https://www.home.saxo/en-ch/content/articles/options/sectors-pull-apart-the-index-holds---options-brief---14-october-2026-14102026"
+      "currency": "JPY",
+      "rank": 3,
+      "bias": "NEUTRAL",
+      "reason": "Spekulanten bauen Longs auf, Interventionsrisiko stützt; Risk-On und Zinsabstand belasten.",
+      "prev_bias": null,
+      "prev_rank": null
     },
     {
-      "title": "FXStreet US Dollar Index Price Forecast (20-Tage-EMA) – 2026-10-13",
-      "url": "https://www.fxstreet.com/news/us-dollar-index-price-forecast-likely-extend-advance-to-near-10300-202610130608"
+      "currency": "CAD",
+      "rank": 4,
+      "bias": "NEUTRAL",
+      "reason": "Öl um 95 $ stützt, Spekulanten bauen aber Shorts aus; Kanada-CPI am 20.10. gibt die Richtung.",
+      "prev_bias": null,
+      "prev_rank": null
     },
     {
-      "title": "FXStreet Dollar Index slips (50-Tage-EMA) – 2026-10-13",
-      "url": "https://www.fxstreet.com/news/dollar-index-slips-from-its-18-month-high-before-us-cpi-202610131604"
+      "currency": "NZD",
+      "rank": 5,
+      "bias": "NEUTRAL",
+      "reason": "Risk-On hilft, doch Spekulanten stocken Shorts auf; kein frischer RBNZ-Impuls.",
+      "prev_bias": null,
+      "prev_rank": null
     },
     {
-      "title": "PANews zu CME FedWatch nach VPI – 2026-10-14",
-      "url": "https://panews.io/articles/01a13a80-c997-703a-a341-58f96b33edb8"
+      "currency": "GBP",
+      "rank": 6,
+      "bias": "SHORT",
+      "reason": "Spekulanten bauen Shorts aus, UK-CPI am 21.10. als Risiko; Positionierung nahe Extrem.",
+      "prev_bias": null,
+      "prev_rank": null
     },
     {
-      "title": "FXStreet COT report – 2026-10-09",
-      "url": "https://www.fxstreet.com/analysis/cot-report-october-09-2026-202610111854"
+      "currency": "EUR",
+      "rank": 7,
+      "bias": "SHORT",
+      "reason": "Energieimporteur bei hohem Ölpreis, französische Haushaltssorgen; extreme Shorts erhöhen aber das Umkehrrisiko.",
+      "prev_bias": null,
+      "prev_rank": null
     },
     {
-      "title": "investinglive Week ahead – 2026-10-10",
-      "url": "https://investinglive.com/news/week-ahead-us-inflation-and-retail-sales-lead-a-busy-economic-calendar-be-aware/"
-    },
-    {
-      "title": "FXStreet Lagarde speech – 2026-10-14",
-      "url": "https://www.fxstreet.com/news/lagarde-speech-were-not-seeing-any-second-round-effects-yet-202610140236"
-    },
-    {
-      "title": "RBNZ OCR-Seite – 2026-09-02",
-      "url": "https://www.rbnz.govt.nz/monetary-policy/about-monetary-policy/the-official-cash-rate"
+      "currency": "CHF",
+      "rank": 8,
+      "bias": "SHORT",
+      "reason": "SNB bei 0 %, während Fed und RBA erhöhen; im Risk-On fehlt Safe-Haven-Nachfrage.",
+      "prev_bias": null,
+      "prev_rank": null
     }
   ],
-  "meta": {
-    "kw": 42,
-    "week_range": "12.–16.10.2026",
-    "run_type": "mittwoch",
-    "run_label": "Mi 14.10.2026, 15:24 Uhr",
-    "created_at": "2026-10-14T13:26:49.570Z",
-    "compare_label": "zu Montag",
-    "compare_date": null
-  },
-  "prev_pairs": [
+  "pairs": [
     {
-      "pair": "GBPUSD",
-      "direction": "SHORT"
+      "pair": "AUDCHF",
+      "direction": "LONG",
+      "reason": "Hawkishe RBA gegen SNB bei 0 % im Risk-On-Umfeld."
     },
     {
       "pair": "USDCHF",
-      "direction": "LONG"
+      "direction": "LONG",
+      "reason": "Hawkishe Fed und hohe US-Renditen gegen SNB ohne Zinserhöhungen."
     },
     {
-      "pair": "GBPJPY",
-      "direction": "SHORT"
+      "pair": "EURAUD",
+      "direction": "SHORT",
+      "reason": "Ölpreis und Haushaltssorgen belasten den Euro, RBA stützt den Aussie. EUR-Shorts sind extrem positioniert."
+    }
+  ],
+  "prev_pairs": null,
+  "sources": [
+    {
+      "title": "Babypips – Market Recap 13.10.2026",
+      "url": "https://www.babypips.com/news/financial-forex-market-recap-2026-10-13"
+    },
+    {
+      "title": "Babypips – Market Recap 07.10.2026",
+      "url": "https://www.babypips.com/news/financial-forex-market-recap-2026-10-07"
+    },
+    {
+      "title": "FXStreet – COT Report 09.10.2026",
+      "url": "https://www.fxstreet.com/analysis/cot-report-october-09-2026-202610111854"
+    },
+    {
+      "title": "Admiral Markets – Fed-Zinsentscheid 16.09.2026",
+      "url": "https://admiralmarkets.com/analytics/traders-blog/fed-raised-interest-rates"
+    },
+    {
+      "title": "ThriveInMarkets – Kalender 19.–23.10.2026",
+      "url": "https://thriveinmarkets.com/calendar/2026-10-19/"
     }
   ]
 }
