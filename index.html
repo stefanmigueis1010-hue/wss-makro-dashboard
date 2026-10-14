@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WSS Makro-Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--g:#C8A74E;--g2:#E2C77A;--bg:#0B0B0B;--pn:#151515;--ln:#2A2A2A;--tx:#EDEDED;--mu:#9A9A9A;--up:#3FB970;--dn:#E5534B;--nt:#8C8C8C;
+--serif:'Playfair Display',Georgia,serif;--sans:Inter,system-ui,-apple-system,Segoe UI,sans-serif}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--tx);font-family:var(--sans)}
+.wrap{max-width:1180px;margin:0 auto;padding:clamp(16px,3vw,40px);display:flex;flex-direction:column;gap:28px}
+.head{border-bottom:1px solid var(--ln);padding-bottom:18px}
+.kicker{color:var(--g);font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(28px,4.5vw,44px);margin:6px 0 4px}
+h1 span{color:var(--g)}
+.sub{color:var(--mu);font-size:14px}
+.stand{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:12px;font-size:15px;font-weight:600;color:var(--tx)}
+.stand .dot{width:8px;height:8px;border-radius:50%;background:var(--up);box-shadow:0 0 0 3px rgba(63,185,112,.2)}
+.stand .rt{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:var(--g);color:#0B0B0B;border-radius:999px;padding:2px 9px}
+.stand.old .dot{background:var(--dn);box-shadow:0 0 0 3px rgba(229,83,75,.2)}
+.cmp{display:inline-block;margin-right:8px;margin-top:10px;border:1px solid var(--g);color:var(--g);border-radius:999px;padding:3px 12px;font-size:12px;letter-spacing:.04em}
+.take{margin-top:12px;font-size:15px;line-height:1.5}
+.take b{color:var(--g);font-weight:600}
+h2{font-size:18px;font-weight:600;color:var(--g);margin:0 0 4px;letter-spacing:.02em}
+.note{color:var(--mu);font-size:12px;margin:0 0 14px}
+.note.gone{margin-top:12px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,18rem),1fr));gap:14px}
+.card{background:var(--pn);border:1px solid var(--ln);border-radius:12px;padding:18px;position:relative}
+.card.gold{border-color:rgba(200,167,78,.55)}
+.lbl{color:var(--mu);font-size:11px;text-transform:uppercase;letter-spacing:.1em}
+.status{display:inline-block;margin-top:8px;font-family:var(--serif);font-size:26px}
+.bull{color:var(--up)}.bear{color:var(--dn)}.neutral{color:var(--nt)}
+.badge{display:inline-block;margin-left:10px;vertical-align:middle;background:var(--g);color:#0B0B0B;font-size:11px;font-weight:700;letter-spacing:.1em;padding:3px 8px;border-radius:999px}
+.was{display:inline-block;margin-left:8px;font-size:11px;color:var(--mu);border:1px solid var(--ln);border-radius:999px;padding:2px 8px;vertical-align:middle}
+.detail{color:var(--mu);font-size:12px;line-height:1.5;margin:10px 0 12px}
+.big{font-family:var(--serif);font-size:34px;font-variant-numeric:tabular-nums;margin-top:4px}
+.kv{display:grid;grid-template-columns:1fr auto;gap:7px 12px;font-size:12px;border-top:1px solid var(--ln);padding-top:10px}
+.kv .k{color:var(--mu)}
+.kv .v{text-align:right;font-variant-numeric:tabular-nums}
+.kv .v small{color:var(--mu);margin-left:6px}
+.d{font-size:12px;margin-left:8px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.up{color:var(--up)}.dn{color:var(--dn)}.flat{color:var(--nt)}
+.na{color:var(--nt)}
+table{width:100%;border-collapse:collapse}
+.tl th,.ct th{color:var(--mu);font-weight:400;font-size:12px;padding:0 8px 8px 0;border-bottom:1px solid var(--ln);text-align:left;white-space:nowrap}
+.tl td{padding:10px 10px 10px 0;border-bottom:1px solid var(--ln);vertical-align:top;font-size:14px}
+.tl td.dt{color:var(--g);white-space:nowrap;width:1%}
+.tl td.tm{white-space:nowrap;width:1%;font-variant-numeric:tabular-nums}
+.tl tr.past td{opacity:.6}
+.rg{display:inline-block;border:1px solid var(--g);color:var(--g);border-radius:4px;font-size:10px;padding:1px 5px;margin-right:6px}
+.sm{display:block;color:var(--mu);font-size:12px;margin-top:2px}
+.cotgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,26rem),1fr));gap:14px}
+.cotgrid .card{overflow-x:auto}
+.ct th{text-align:right;padding:0 8px 8px}
+.ct th:first-child,.ct td:first-child{text-align:left;padding-left:0}
+.ct td{white-space:nowrap;text-align:right;padding:9px 8px;border-bottom:1px solid var(--ln);font-size:14px;font-variant-numeric:tabular-nums}
+.ct td.cur{color:var(--g);font-weight:600}
+.ct td.pos,.ct th.pos{white-space:normal;text-align:left;color:var(--mu);font-size:12px}
+@media(max-width:560px){.ct .pos{display:none}}
+.chart{position:relative;min-height:300px}
+.tip{position:absolute;pointer-events:none;background:#1F1F1F;border:1px solid var(--g);border-radius:8px;padding:6px 10px;font-size:12px;opacity:0;transition:opacity .12s;white-space:nowrap}
+.tip .s{color:var(--mu)}
+.biasg{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,16rem),1fr));gap:12px}
+.bc{background:var(--pn);border:1px solid var(--ln);border-radius:12px;padding:16px;border-top:3px solid var(--nt)}
+.bc.LONG{border-top-color:var(--up)}.bc.SHORT{border-top-color:var(--dn)}
+.bc .row{display:flex;align-items:baseline;justify-content:space-between;gap:8px}
+.bc .cur{font-family:var(--serif);font-size:26px;color:var(--g)}
+.bc .rk{color:var(--mu);font-size:12px}
+.bc .lab{font-size:24px;font-weight:700;letter-spacing:.06em;margin-top:4px}
+.lab.LONG{color:var(--up)}.lab.SHORT{color:var(--dn)}.lab.NEUTRAL{color:var(--nt)}
+.bc p{color:var(--mu);font-size:12px;line-height:1.5;margin:8px 0 0}
+.pairs{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,18rem),1fr));gap:14px}
+.pc{background:linear-gradient(160deg,#1C1810,var(--pn) 60%);border:1px solid rgba(200,167,78,.6);border-radius:14px;padding:20px}
+.pc .n{color:var(--g);font-size:12px;letter-spacing:.14em}
+.pc .p{font-family:var(--serif);font-size:32px;margin:4px 0}
+.dir{display:inline-block;font-weight:700;letter-spacing:.08em;font-size:13px;padding:3px 10px;border-radius:999px}
+.dir.LONG{background:rgba(63,185,112,.15);color:var(--up)}.dir.SHORT{background:rgba(229,83,75,.15);color:var(--dn)}
+.ptag{margin-left:10px;font-size:10px;font-weight:700;letter-spacing:.08em;padding:2px 7px;border-radius:999px}
+.ptag.ok{background:rgba(140,140,140,.18);color:var(--mu)}.ptag.new{background:var(--g);color:#0B0B0B}
+.pc p{color:var(--mu);font-size:12px;line-height:1.5;margin:10px 0 0}
+.foot{border-top:1px solid var(--ln);padding-top:18px;font-size:12px;color:var(--mu)}
+.foot ul{margin:6px 0 14px;padding-left:18px;line-height:1.7}
+.foot a{color:var(--g2)}
+.disc{border:1px solid rgba(200,167,78,.5);border-radius:10px;padding:12px 14px;color:var(--tx);background:#15130D}
+.err{color:var(--dn);padding:40px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap" id="app"><div class="sub" style="padding:40px;text-align:center">Lade Daten …</div></div>
+
+<script>
+/* WSS Makro-Dashboard – liest data.json (gleicher Ordner) und berechnet alle Veränderungen selbst. */
+const NF = (o) => new Intl.NumberFormat('de-DE', o);
+const f2 = NF({minimumFractionDigits:2, maximumFractionDigits:2});
+const f0 = NF({maximumFractionDigits:0});
+const s0 = NF({maximumFractionDigits:0, signDisplay:'always'});
+const pct = NF({style:'percent', minimumFractionDigits:2, maximumFractionDigits:2, signDisplay:'always'});
+const isNum = v => v !== null && v !== undefined && v !== '' && !isNaN(Number(v));
+const fd = s => { if(!s) return ''; const [y,m,d] = String(s).slice(0,10).split('-'); return `${d}.${m}.`; };
+const el = (tag, cls, txt) => { const e = document.createElement(tag); if(cls) e.className = cls; if(txt !== undefined && txt !== null) e.textContent = txt; return e; };
+
+function fmtVal(r){
+  if(!isNum(r.value)) return (r.value === null || r.value === undefined || r.value === '') ? null : String(r.value);
+  const n = Number(r.value);
+  if(r.unit === '%') return f2.format(n) + ' %';
+  if(r.unit === '$') return f0.format(n) + ' $';
+  return n >= 1000 ? f0.format(n) : f2.format(n);
+}
+/* Veränderung: Renditen (%) in Basispunkten, sonst in Prozent */
+function delta(r){
+  if(!isNum(r.value) || !isNum(r.prev)) return null;
+  const c = Number(r.value), p = Number(r.prev);
+  if(r.unit === '%'){ const bp = Math.round((c - p) * 100); return {dir: Math.sign(bp), txt: (bp>0?'▲ ':bp<0?'▼ ':'• ') + s0.format(bp) + ' bp'}; }
+  const q = (c - p) / p; const dir = Math.abs(q) < 0.0005 ? 0 : Math.sign(q);
+  return {dir, txt: (dir>0?'▲ ':dir<0?'▼ ':'• ') + pct.format(q)};
+}
+const dCls = d => d > 0 ? 'up' : d < 0 ? 'dn' : 'flat';
+
+/* Zeitpunkt der Aktualisierung aus created_at (echter Zeitstempel), immer in deutscher Zeit */
+function stand(M){
+  if(M.created_at){ const d = new Date(M.created_at);
+    if(!isNaN(d)){ const tz = {timeZone:'Europe/Berlin'};
+      const wd = new Intl.DateTimeFormat('de-DE',{...tz, weekday:'short'}).format(d).replace('.','');
+      const dt = new Intl.DateTimeFormat('de-DE',{...tz, day:'2-digit', month:'2-digit', year:'numeric'}).format(d);
+      const tm = new Intl.DateTimeFormat('de-DE',{...tz, hour:'2-digit', minute:'2-digit'}).format(d);
+      return `${wd} ${dt}, ${tm} Uhr`; } }
+  return M.run_label || 'unbekannt';
+}
+
+function render(D){
+  const app = document.getElementById('app'); app.innerHTML = '';
+  const M = D.meta, cmpTxt = M.compare_label ? `Veränderungen ${M.compare_label} (${fd(M.compare_date)})` : 'Erste Ausgabe – noch kein Vergleich';
+
+  /* Header */
+  const h = el('header','head');
+  h.append(el('div','kicker','Wallstreetstory · Wochen-Richtungsfilter'));
+  const h1 = el('h1'); h1.append('Makro-Dashboard '); h1.append(el('span',null,'KW ' + M.kw)); h.append(h1);
+  h.append(el('div','sub', `Handelswoche ${M.week_range}`));
+  const standTxt = stand(M);
+  const sb = el('div','stand'); sb.append(el('span','dot')); sb.append(el('span',null,'Stand: ' + standTxt));
+  if(M.run_type === 'montag' || M.run_type === 'mittwoch') sb.append(el('span','rt', M.run_type === 'montag' ? 'Montags-Update' : 'Mittwochs-Update'));
+  const ageDays = M.created_at ? (Date.now() - new Date(M.created_at)) / 864e5 : null;
+  if(ageDays !== null && ageDays > 6){ sb.classList.add('old'); sb.append(el('span','was','Update überfällig')); }
+  h.append(sb);
+  h.append(el('div','cmp', cmpTxt));
+  document.title = 'WSS Makro-Dashboard KW ' + M.kw + ' · Stand ' + standTxt;
+  const take = el('div','take'); h.append(take);
+  app.append(h);
+
+  /* Makro */
+  const sec = (title, note, id) => { const s = el('section'); s.id = id; s.append(el('h2',null,title)); if(note) s.append(el('p','note',note)); app.append(s); return s; };
+  const s1 = sec('Makro', 'Jeder Wert mit Datum, auf das er sich bezieht. ▲/▼ = ' + (M.compare_label || 'Veränderung'), 'makro');
+  const g = el('div','grid3'); s1.append(g);
+  const byKey = k => D.makro.find(r => r.key === k);
+  const st = k => D.status.find(r => r.key === k) || {};
+  const kvBox = keys => { const b = el('div','kv'); keys.forEach(k => { const r = byKey(k); if(!r) return;
+      b.append(el('div','k', r.label)); const v = el('div','v'); const f = fmtVal(r);
+      v.append(el('span', f === null ? 'na' : null, f === null ? 'N/A' : f));
+      const dd = delta(r); if(dd) v.append(el('span','d '+dCls(dd.dir), dd.txt));
+      if(r.date) v.append(el('small', null, fd(r.date)));
+      b.append(v); }); return b; };
+  const tile = (key, label, keys, gold, big) => {
+    const c = el('div','card' + (gold ? ' gold' : '')); const S = st(key);
+    c.append(el('div','lbl',label));
+    const line = el('div'); line.append(el('span','status ' + (S.tone || 'neutral'), S.status || 'N/A'));
+    if(key === 'fed' && S.status) line.append(el('span','badge', S.status));
+    if(S.prev_status && S.prev_status !== S.status) line.append(el('span','was','vorher ' + S.prev_status));
+    c.append(line);
+    if(big){ const r = byKey(big); const b = el('div','big'); const f = r && fmtVal(r); b.append(el('span', f ? null : 'na', f || 'N/A'));
+      const dd = r && delta(r); if(dd) b.append(el('span','d ' + dCls(dd.dir), dd.txt)); c.append(b); }
+    c.append(el('div','detail', S.detail || ''));
+    c.append(kvBox(keys)); g.append(c);
+  };
+  tile('dxy','US-Dollar-Index',['dxy','dxy_ma20','dxy_ma50'],false,'dxy');
+  tile('regime','Regime',['spx','vix','us10y','gold','usdjpy']);
+  tile('fed','Fed',['fedfunds','fedwatch'],true);
+
+  /* Termine */
+  const s2 = sec('Termine der Woche','Deutsche Zeit. Bitte kurz vor dem Event im Kalender gegenprüfen.','termine');
+  const c2 = el('div','card'); const t = el('table','tl');
+  t.innerHTML = '<thead><tr><th>Tag</th><th>Uhrzeit</th><th>Event</th></tr></thead>';
+  const tb = el('tbody'); const today = new Date().toISOString().slice(0,10);
+  D.termine.forEach(r => { const tr = el('tr', r.date < today ? 'past' : null);
+    tr.append(el('td','dt', `${r.day} ${fd(r.date)}`), el('td','tm', r.time));
+    const e = el('td'); e.append(el('span','rg', r.region), document.createTextNode(r.event)); if(r.note) e.append(el('span','sm', r.note));
+    tr.append(e); tb.append(tr); });
+  t.append(tb); c2.append(t); s2.append(c2);
+
+  /* COT */
+  const C = D.cot;
+  const s3 = sec('COT – Large Speculators (Non-Commercials)', `Stichtag ${fd(C.stichtag)}${C.stichtag ? String(C.stichtag).slice(0,4) : ''}, veröffentlicht ${fd(C.published)} · ⚠️ = COT-Index ≥ 80 oder ≤ 20 (extreme Positionierung, Umkehrgefahr)` + (C.unchanged_since_last_run ? ' · seit der letzten Ausgabe kein neuer Report' : ''), 'cot');
+  const cg = el('div','cotgrid'); s3.append(cg);
+  const c3 = el('div','card'); const ct = el('table','ct');
+  ct.innerHTML = '<thead><tr><th>Währung</th><th>Netto</th><th>Δ Vorwoche</th><th>COT-Index</th><th>Extrem</th><th class="pos">Tendenz</th></tr></thead>';
+  const cb = el('tbody');
+  C.rows.forEach(r => { const tr = el('tr'); const n = Number(r.net), ch = Number(r.change);
+    tr.append(el('td','cur', r.currency), el('td', n >= 0 ? 'up' : 'dn', s0.format(n)),
+      el('td', ch >= 0 ? 'up' : 'dn', (ch >= 0 ? '▲ ' : '▼ ') + s0.format(ch)),
+      el('td', null, isNum(r.cot_index) ? f0.format(r.cot_index) + ' %' : 'N/A'),
+      el('td', null, r.extreme ? '⚠️' : '–'), el('td','pos', r.positioning || ''));
+    cb.append(tr); });
+  ct.append(cb); c3.append(ct); cg.append(c3);
+  const c4 = el('div','card'); c4.append(el('div','lbl','Netto-Positionen in Kontrakten'));
+  const box = el('div','chart'); c4.append(box); cg.append(c4);
+  drawCot(box, C.rows, C.stichtag);
+  window.addEventListener('resize', () => { box.innerHTML = ''; drawCot(box, C.rows, C.stichtag); });
+
+  /* Bias */
+  const s4 = sec('Wochen-Bias','Sortiert von stärkster Long- zu stärkster Short-Währung. Kombination aus COT, Notenbank-Kurs und Regime.','bias');
+  const bg = el('div','biasg'); s4.append(bg);
+  [...D.bias].sort((a,b) => a.rank - b.rank).forEach(r => {
+    const c = el('div','bc ' + r.bias); const row = el('div','row');
+    row.append(el('div','cur', r.currency));
+    let rk = '#' + r.rank; if(isNum(r.prev_rank) && r.prev_rank !== r.rank) rk += (r.prev_rank > r.rank ? ' ▲' : ' ▼') + ' (vorher #' + r.prev_rank + ')';
+    row.append(el('div','rk', rk)); c.append(row);
+    const lab = el('div','lab ' + r.bias, r.bias);
+    if(r.prev_bias && r.prev_bias !== r.bias) lab.append(el('span','was','vorher ' + r.prev_bias));
+    c.append(lab, el('p', null, r.reason)); bg.append(c);
+  });
+
+  /* Paare */
+  const s5 = sec('Top 3 Paare','Größte Divergenz zwischen Long- und Short-Währungen.','paare');
+  const pg = el('div','pairs'); s5.append(pg);
+  const prevPairs = D.prev_pairs || null;
+  D.pairs.forEach((r,i) => { const c = el('div','pc');
+    const n = el('div','n','IDEE ' + (i+1));
+    if(prevPairs){ const old = prevPairs.find(p => p.pair === r.pair);
+      const tag = !old ? 'NEU' : old.direction !== r.direction ? 'RICHTUNG GEDREHT' : 'BESTÄTIGT';
+      n.append(el('span','ptag ' + (tag === 'BESTÄTIGT' ? 'ok' : 'new'), tag)); }
+    c.append(n, el('div','p', r.pair), el('span','dir ' + r.direction, r.direction + '-Bias'), el('p', null, r.reason)); pg.append(c); });
+  if(prevPairs){ const gone = prevPairs.filter(p => !D.pairs.some(q => q.pair === p.pair));
+    if(gone.length) s5.append(el('p','note gone', 'Nicht mehr in den Top 3: ' + gone.map(p => p.pair + ' ' + p.direction).join(', '))); }
+
+  /* Footer */
+  const ft = el('footer','foot');
+  ft.append(el('p', null, `Stand der Daten: ${standTxt} · nächstes Update ${M.run_type === 'mittwoch' ? 'Montag' : 'Mittwoch'} 07:00 Uhr`));
+  ft.append(el('div','lbl','Quellen'));
+  const ul = el('ul'); (D.sources || []).forEach(s => { const li = el('li'); const a = el('a', null, s.title); a.href = s.url; a.target = '_blank'; a.rel = 'noopener'; li.append(a); ul.append(li); });
+  ft.append(ul, el('div','disc','Der Bias ist nur ein Richtungsfilter für die eigene technische Analyse (H4 → H1 → M15) und keine Einstiegsempfehlung. Keine Anlageberatung.'));
+  app.append(ft);
+
+  /* Takeaway */
+  const sorted = [...D.bias].sort((a,b) => a.rank - b.rank);
+  const add = (txt, bold) => take.append(bold ? el('b', null, txt) : document.createTextNode(txt));
+  add(st('regime').status || 'N/A', true); add(' · Fed '); add(st('fed').status || 'N/A', true);
+  add(' · stärkste Währung '); add(sorted[0].currency, true); add(', schwächste '); add(sorted[sorted.length-1].currency, true);
+  if(D.pairs[0]){ add(' · Top-Idee '); add(D.pairs[0].pair + ' ' + D.pairs[0].direction, true); }
+  if(M.headline) add('. ' + M.headline);
+
+  sendHeight();
+}
+
+function drawCot(box, rows, stichtag){
+  const NS = 'http://www.w3.org/2000/svg';
+  const W = Math.max(280, box.clientWidth || 400), rowH = 32, top = 8, bot = 26, lab = 48;
+  const H = top + rows.length * rowH + bot;
+  const max = Math.max(...rows.map(r => Math.abs(Number(r.net)))) * 1.08 || 1;
+  const x = v => lab + (v + max) / (2 * max) * (W - lab - 8);
+  const svg = document.createElementNS(NS,'svg'); svg.setAttribute('viewBox', `0 0 ${W} ${H}`); svg.setAttribute('width','100%');
+  const mk = (t, a) => { const n = document.createElementNS(NS, t); for(const k in a) n.setAttribute(k, a[k]); svg.append(n); return n; };
+  const step = Math.pow(10, Math.floor(Math.log10(max))) * (max / Math.pow(10, Math.floor(Math.log10(max))) > 5 ? 5 : 2) / 2;
+  for(let v = -Math.floor(max/step)*step; v <= max; v += step){
+    mk('line',{x1:x(v),x2:x(v),y1:top,y2:H-bot,stroke: v === 0 ? '#C8A74E' : '#2A2A2A'});
+    const t = mk('text',{x:x(v),y:H-8,'text-anchor':'middle',fill:'#9A9A9A','font-size':11}); t.textContent = v === 0 ? '0' : NF({notation:'compact',maximumFractionDigits:0}).format(v);
+  }
+  const tip = el('div','tip'); box.append(tip);
+  rows.forEach((r,i) => { const n = Number(r.net), y = top + i * rowH;
+    const tl = mk('text',{x:0,y:y + rowH/2,dy:'0.35em',fill:'#C8A74E','font-size':13,'font-weight':600}); tl.textContent = r.currency + (r.extreme ? ' ⚠' : '');
+    const rect = mk('rect',{x:Math.min(x(0),x(n)),y:y+5,width:Math.abs(x(n)-x(0)),height:rowH-10,rx:4,fill: n >= 0 ? '#3FB970' : '#E5534B'});
+    rect.addEventListener('mousemove', ev => { tip.innerHTML = ''; tip.append(el('div','s', `${r.currency} · Stichtag ${fd(stichtag)}`), el('div', null, `Netto ${s0.format(n)} · Δ ${s0.format(Number(r.change))}`));
+      const b = box.getBoundingClientRect(); let lx = ev.clientX - b.left + 12; tip.style.opacity = 1;
+      if(lx + tip.offsetWidth > b.width) lx = ev.clientX - b.left - tip.offsetWidth - 12;
+      tip.style.left = Math.max(0,lx) + 'px'; tip.style.top = (ev.clientY - b.top - 10) + 'px'; });
+    rect.addEventListener('mouseleave', () => tip.style.opacity = 0);
+  });
+  box.prepend(svg);
+}
+
+/* Höhe an die einbettende Seite (LeadCosmos/Memberspot) melden */
+function sendHeight(){ try { parent.postMessage({type:'wss-makro-height', h: document.documentElement.scrollHeight}, '*'); } catch(e){} }
+window.addEventListener('resize', sendHeight);
+
+fetch('data.json?t=' + Date.now(), {cache:'no-store'})
+  .then(r => { if(!r.ok) throw new Error(r.status); return r.json(); })
+  .then(render)
+  .catch(e => { document.getElementById('app').innerHTML = '<div class="err">Daten konnten nicht geladen werden.</div>'; console.error(e); });
+</script>
+</body>
+</html>
