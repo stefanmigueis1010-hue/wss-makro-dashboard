@@ -86,8 +86,6 @@ table{width:100%;border-collapse:collapse}
 .foot a{color:var(--g2)}
 .disc{border:1px solid rgba(200,167,78,.5);border-radius:10px;padding:12px 14px;color:var(--tx);background:#15130D}
 .err{color:var(--dn);padding:40px;text-align:center}
-.prev-pair-info{font-size:.72rem;color:#aaa;margin-top:.3rem}
-.rk-change{font-size:.7rem;color:#aaa;font-weight:400}
 </style>
 </head>
 <body>
@@ -224,12 +222,7 @@ function render(D){
     const c = el('div','bc ' + r.bias); const row = el('div','row');
     row.append(el('div','cur', r.currency));
     let rk = '#' + r.rank; if(isNum(r.prev_rank) && r.prev_rank !== r.rank) rk += (r.prev_rank > r.rank ? ' ▲' : ' ▼') + ' (vorher #' + r.prev_rank + ')';
-    row.applet rkEl = el('div','rk', rk);
-    if(r.prev_rank && r.prev_rank !== r.rank) {
-      const moved = r.prev_rank > r.rank ? '↑' : '↓';
-      rkEl.append(el('span','rk-change',' ' + moved + ' vorher #' + r.prev_rank));
-    }
-    row.append(rkEl); c.append(row);
+    row.append(el('div','rk', rk)); c.append(row);
     const lab = el('div','lab ' + r.bias, r.bias);
     if(r.prev_bias && r.prev_bias !== r.bias) lab.append(el('span','was','vorher ' + r.prev_bias));
     c.append(lab, el('p', null, r.reason)); bg.append(c);
@@ -245,18 +238,7 @@ function render(D){
     if(prevPairs){ const old = prevPairs.find(p => p.pair === r.pair);
       const tag = !old ? 'NEU' : old.direction !== r.direction ? 'RICHTUNG GEDREHT' : 'BESTÄTIGT';
       n.append(el('span','ptag ' + (tag === 'BESTÄTIGT' ? 'ok' : 'new'), tag)); }
-    const pairEl = el('div','p', r.pair);
-    const dirEl = el('span','dir ' + r.direction, r.direction + '-Bias');
-    const reasonEl = el('p', null, r.reason);
-    let prevInfo = null;
-    if(prevPairs) {
-      const old = prevPairs.find(p => p.pair === r.pair);
-      if(!old) prevInfo = el('p','prev-pair-info','↑ Neu in den Top 3');
-      else if(old.direction !== r.direction) prevInfo = el('p','prev-pair-info','↔ Vorher: ' + old.pair + ' ' + old.direction);
-    }
-    c.append(n, pairEl, dirEl, reasonEl);
-    if(prevInfo) c.append(prevInfo);
-    pg.append(c); });
+    c.append(n, el('div','p', r.pair), el('span','dir ' + r.direction, r.direction + '-Bias'), el('p', null, r.reason)); pg.append(c); });
   if(prevPairs){ const gone = prevPairs.filter(p => !D.pairs.some(q => q.pair === p.pair));
     if(gone.length) s5.append(el('p','note gone', 'Nicht mehr in den Top 3: ' + gone.map(p => p.pair + ' ' + p.direction).join(', '))); }
 
