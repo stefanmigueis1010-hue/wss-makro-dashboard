@@ -3,11 +3,11 @@
     "kw": 42,
     "week_range": "12.–16.10.2026",
     "run_type": "mittwoch",
-    "run_label": "Mi 14.10.2026, 15:37 Uhr",
-    "created_at": "2026-10-14T13:39:42.077Z",
-    "compare_label": null,
-    "compare_date": null,
-    "headline": "Nach dem US-CPI am Mittwoch prüfen US-Einzelhandelsumsätze und PPI am Donnerstag sowie die Rede von Fed-Chef Warsh am Freitag, ob die Fed am 28.10. erneut erhöht – derzeit sind laut FedWatch nur rund 19 % eingepreist.",
+    "run_label": "Mi 14.10.2026, 18:00 Uhr",
+    "created_at": "2026-10-14T16:00:00.000Z",
+    "compare_label": "zu Montag",
+    "compare_date": "2026-10-14",
+    "headline": "Nach dem heißen US-CPI (3,7 % y/y, Kern 2,6 %) sind laut FedWatch rund 44–49 % für eine Fed-Erhöhung am 28.10. eingepreist – PPI und Einzelhandelsumsätze am Donnerstag sowie Warsh in Bangkok (Fr 05:30 Uhr) entscheiden, ob daraus die Mehrheit wird.",
     "methode": "Bias = COT-Richtung (±1) + COT-Aufbau (±1) + Notenbank (±2) + Regime (±1); LONG ab +2, SHORT ab −2."
   },
   "makro": [
@@ -17,8 +17,8 @@
       "value": 102.2,
       "unit": "",
       "date": "2026-10-13",
-      "prev": null,
-      "prev_date": null
+      "prev": 102.2,
+      "prev_date": "2026-10-13"
     },
     {
       "key": "dxy_ma20",
@@ -26,8 +26,8 @@
       "value": 101.48,
       "unit": "",
       "date": "2026-10-13",
-      "prev": null,
-      "prev_date": null
+      "prev": 101.48,
+      "prev_date": "2026-10-13"
     },
     {
       "key": "dxy_ma50",
@@ -35,17 +35,17 @@
       "value": 100.7,
       "unit": "",
       "date": "2026-10-13",
-      "prev": null,
-      "prev_date": null
+      "prev": 100.7,
+      "prev_date": "2026-10-13"
     },
     {
       "key": "spx",
       "label": "S&P 500",
-      "value": 7806,
+      "value": 7805,
       "unit": "",
       "date": "2026-10-13",
-      "prev": null,
-      "prev_date": null
+      "prev": 7806,
+      "prev_date": "2026-10-13"
     },
     {
       "key": "vix",
@@ -53,8 +53,8 @@
       "value": 15.27,
       "unit": "",
       "date": "2026-10-13",
-      "prev": null,
-      "prev_date": null
+      "prev": 15.27,
+      "prev_date": "2026-10-13"
     },
     {
       "key": "us10y",
@@ -62,8 +62,8 @@
       "value": 5.22,
       "unit": "%",
       "date": "2026-10-13",
-      "prev": null,
-      "prev_date": null
+      "prev": 5.22,
+      "prev_date": "2026-10-13"
     },
     {
       "key": "gold",
@@ -71,15 +71,15 @@
       "value": 4163,
       "unit": "$",
       "date": "2026-10-13",
-      "prev": null,
-      "prev_date": null
+      "prev": 4163,
+      "prev_date": "2026-10-13"
     },
     {
       "key": "usdjpy",
       "label": "USD/JPY",
-      "value": null,
+      "value": 158.29,
       "unit": "",
-      "date": null,
+      "date": "2026-10-13",
       "prev": null,
       "prev_date": null
     },
@@ -89,40 +89,40 @@
       "value": "3,75–4,00 %",
       "unit": "",
       "date": "2026-09-16",
-      "prev": null,
-      "prev_date": null
+      "prev": "3,75–4,00 %",
+      "prev_date": "2026-09-16"
     },
     {
       "key": "fedwatch",
       "label": "Hike-Wahrscheinlichkeit nächste FOMC (28.10.)",
-      "value": "ca. 19 %",
+      "value": "ca. 44–49 %",
       "unit": "",
       "date": "2026-10-14",
-      "prev": null,
-      "prev_date": null
+      "prev": "ca. 19 %",
+      "prev_date": "2026-10-14"
     }
   ],
   "status": [
     {
       "key": "dxy",
       "status": "BULLISH",
-      "detail": "DXY 102.2 über 20-Tage-EMA (101.48) und über 50-Tage-EMA (100.7).",
+      "detail": "DXY 102.2 (Schluss 13.10.) über 20-Tage-EMA (101.48) und über 50-Tage-EMA (100.7); nach dem heißen CPI am 14.10. intraday bis 102.72.",
       "tone": "bull",
-      "prev_status": null
+      "prev_status": "BULLISH"
     },
     {
       "key": "regime",
       "status": "RISK-ON",
-      "detail": "Punkte +2: VIX 15.27 (+2), S&P 500 ohne Vergleich (0), Gold ohne Vergleich (0), USD/JPY ohne Vergleich (0).",
+      "detail": "Punkte +2: VIX 15.27 (+2), S&P 500 7805 praktisch unverändert (0), Gold −0,3 % auf 4163 (+1), USD/JPY leicht tiefer/Yen fester (−1). Achtung: Nach dem CPI am 14.10. fielen Aktien und Edelmetalle, 10Y über 5,30 % – Regime fragil.",
       "tone": "bull",
-      "prev_status": null
+      "prev_status": "RISK-ON"
     },
     {
       "key": "fed",
       "status": "HAWKISH",
-      "detail": "Die Fed hob am 16.09.2026 einstimmig um 25 Bp auf 3,75–4,00 % an; laut Protokoll vom 07.10. erwartet die Mehrheit eine weitere Erhöhung bis Ende 2026.",
+      "detail": "Fed hob am 16.09.2026 einstimmig auf 3,75–4,00 % an; Williams sieht eine weitere Erhöhung 2026 als angemessen; CPI September 3,7 % y/y, Kern 0,3 % m/m/2,6 % y/y über Erwartung; FedWatch-Hike-Wahrscheinlichkeit für 28.10. von ca. 22 % auf ca. 44–49 %.",
       "tone": "bear",
-      "prev_status": null
+      "prev_status": "HAWKISH"
     }
   ],
   "termine": [
@@ -132,7 +132,7 @@
       "time": "14:30",
       "event": "US-Verbraucherpreise (CPI) September",
       "region": "USD",
-      "note": "Bereits veröffentlicht; laut XTB über den Erwartungen"
+      "note": "Veröffentlicht: 3,7 % y/y (Konsens 3,6 %), Kern 0,3 % m/m bzw. 2,6 % y/y – über den Erwartungen"
     },
     {
       "day": "Do",
@@ -140,7 +140,7 @@
       "time": "02:30",
       "event": "Australien Arbeitsmarktbericht September",
       "region": "AUD",
-      "note": "Übliche Uhrzeit"
+      "note": "Prognose +20k, Arbeitslosenquote 4,6 %"
     },
     {
       "day": "Do",
@@ -164,15 +164,31 @@
       "time": "14:30",
       "event": "US-Erzeugerpreise (PPI) September",
       "region": "USD",
-      "note": ""
+      "note": "Nach heißem CPI besonders relevant für Oktober-Hike"
+    },
+    {
+      "day": "Do",
+      "date": "2026-10-15",
+      "time": "—",
+      "event": "Rede von RBNZ-Gouverneurin Breman",
+      "region": "NZD",
+      "note": "Uhrzeit unbekannt"
+    },
+    {
+      "day": "Fr",
+      "date": "2026-10-16",
+      "time": "05:30",
+      "event": "Fed-Chef Warsh – Fireside Chat mit IMF-Chefin Georgieva (Bangkok)",
+      "region": "USD",
+      "note": "Laut Fed-Kalender Do 15.10., 23:30 Uhr EDT = Fr 05:30 Uhr MESZ"
     },
     {
       "day": "Fr",
       "date": "2026-10-16",
       "time": "—",
-      "event": "Rede von Fed-Chef Warsh",
-      "region": "USD",
-      "note": "Uhrzeit nicht bestätigt (Uhrzeit unbekannt)"
+      "event": "Rede von BoE-Gouverneur Bailey",
+      "region": "GBP",
+      "note": "Uhrzeit unbekannt"
     }
   ],
   "cot": {
@@ -251,9 +267,9 @@
       "bank": "Fed",
       "stance": "HAWKISH",
       "changed": false,
-      "reason": "Die Fed hob am 16.09.2026 einstimmig um 25 Bp auf 3,75–4,00 % an; laut Protokoll vom 07.10. erwartet die Mehrheit eine weitere Erhöhung bis Ende 2026.",
-      "date": "2026-10-07",
-      "source": "https://cryptotimes.io/2026/10/14/us-cpi-data-inflation-may-hit-3-7-what-to-expect-for-bitcoin"
+      "reason": "Die Fed hob am 16.09.2026 einstimmig auf 3,75–4,00 % an; nach dem über den Erwartungen liegenden CPI vom 14.10. (3,7 % y/y, Kern 2,6 %) preist CME FedWatch ca. 44–49 % für eine weitere Erhöhung am 28.10. ein.",
+      "date": "2026-10-14",
+      "source": "https://actionforex.com/action-insight/market-overview/657507-dollar-breaks-higher-as-core-cpi-pushes-october-fed-hike-odds-above-40"
     },
     {
       "currency": "EUR",
@@ -324,7 +340,7 @@
       "currency": "USD",
       "score": 4,
       "bias": "LONG",
-      "reason": "COT netto long (+1), Longs ausgebaut (+1), Fed hawkish (+2), RISK-ON (0) → +4 Punkte.",
+      "reason": "COT netto long (+1), Longs ausgebaut (+1), Fed hawkish und durch heißen CPI bestätigt (+2), RISK-ON (0) → +4 Punkte.",
       "score_details": {
         "cot_richtung": 1,
         "cot_aufbau": 1,
@@ -332,14 +348,14 @@
         "regime": 0
       },
       "rank": 1,
-      "prev_bias": null,
-      "prev_rank": null
+      "prev_bias": "LONG",
+      "prev_rank": 1
     },
     {
       "currency": "JPY",
       "score": 3,
       "bias": "LONG",
-      "reason": "COT netto long (+1), Longs ausgebaut (+1), BoJ hawkish (+2), RISK-ON (-1) → +3 Punkte.",
+      "reason": "COT netto long (+1), Longs ausgebaut (+1), BoJ hawkish (+2), RISK-ON (-1) → +3 Punkte; Interventionsrisiko stützt, verblassende Oktober-Hike-Wetten bremsen.",
       "score_details": {
         "cot_richtung": 1,
         "cot_aufbau": 1,
@@ -347,8 +363,8 @@
         "regime": -1
       },
       "rank": 2,
-      "prev_bias": null,
-      "prev_rank": null
+      "prev_bias": "LONG",
+      "prev_rank": 2
     },
     {
       "currency": "AUD",
@@ -362,8 +378,8 @@
         "regime": 1
       },
       "rank": 3,
-      "prev_bias": null,
-      "prev_rank": null
+      "prev_bias": "NEUTRAL",
+      "prev_rank": 3
     },
     {
       "currency": "NZD",
@@ -377,8 +393,8 @@
         "regime": 1
       },
       "rank": 4,
-      "prev_bias": null,
-      "prev_rank": null
+      "prev_bias": "NEUTRAL",
+      "prev_rank": 4
     },
     {
       "currency": "EUR",
@@ -392,8 +408,8 @@
         "regime": 0
       },
       "rank": 5,
-      "prev_bias": null,
-      "prev_rank": null
+      "prev_bias": "NEUTRAL",
+      "prev_rank": 5
     },
     {
       "currency": "CAD",
@@ -407,8 +423,8 @@
         "regime": 1
       },
       "rank": 6,
-      "prev_bias": null,
-      "prev_rank": null
+      "prev_bias": "NEUTRAL",
+      "prev_rank": 6
     },
     {
       "currency": "CHF",
@@ -422,8 +438,8 @@
         "regime": -1
       },
       "rank": 7,
-      "prev_bias": null,
-      "prev_rank": null
+      "prev_bias": "SHORT",
+      "prev_rank": 7
     },
     {
       "currency": "GBP",
@@ -437,20 +453,20 @@
         "regime": 0
       },
       "rank": 8,
-      "prev_bias": null,
-      "prev_rank": null
+      "prev_bias": "SHORT",
+      "prev_rank": 8
     }
   ],
   "pairs": [
     {
       "pair": "GBPUSD",
       "direction": "SHORT",
-      "reason": "GBP -2 (#8) gegen USD +4 (#1): 6 Punkte Differenz. ⚠️ GBP extrem positioniert."
+      "reason": "GBP -2 (#8) gegen USD +4 (#1): 6 Punkte Differenz, Fed-Hike-Erwartung nach CPI gestiegen. ⚠️ GBP extrem positioniert."
     },
     {
       "pair": "USDCHF",
       "direction": "LONG",
-      "reason": "USD +4 (#1) gegen CHF -2 (#7): 6 Punkte Differenz."
+      "reason": "USD +4 (#1) gegen CHF -2 (#7): 6 Punkte Differenz, Zinsdifferenz weitet sich bei SNB 0 %."
     },
     {
       "pair": "GBPJPY",
@@ -458,15 +474,32 @@
       "reason": "GBP -2 (#8) gegen JPY +3 (#2): 5 Punkte Differenz. ⚠️ GBP extrem positioniert."
     }
   ],
-  "prev_pairs": null,
+  "prev_pairs": [
+    {
+      "pair": "GBPUSD",
+      "direction": "SHORT"
+    },
+    {
+      "pair": "USDCHF",
+      "direction": "LONG"
+    },
+    {
+      "pair": "GBPJPY",
+      "direction": "SHORT"
+    }
+  ],
   "sources": [
     {
       "title": "Babypips Financial & Forex Market Recap – 2026-10-13",
       "url": "https://www.babypips.com/news/financial-forex-market-recap-2026-10-13"
     },
     {
+      "title": "Investrade Market Review (S&P 500, USD/JPY) – 2026-10-13",
+      "url": "https://investrade.com/market-review-october-13-2026/"
+    },
+    {
       "title": "Saxo Options Brief – 2026-10-14",
-      "url": "https://www.home.saxo/content/articles/options/sectors-pull-apart-the-index-holds---options-brief---14-october-2026-14102026"
+      "url": "https://www.home.saxo/en-mena/content/articles/options/sectors-pull-apart-the-index-holds---options-brief---14-october-2026-14102026"
     },
     {
       "title": "FXStreet US Dollar Index Price Forecast (20-Tage-EMA) – 2026-10-13",
@@ -481,12 +514,32 @@
       "url": "https://www.fxstreet.com/analysis/cot-report-october-09-2026-202610111854"
     },
     {
-      "title": "BeInCrypto (zitiert CME FedWatch) – 2026-10-14",
-      "url": "https://beincrypto.com/copper-price-record-fed-hike-supply"
+      "title": "ActionForex (zitiert CME FedWatch, DXY nach CPI) – 2026-10-14",
+      "url": "https://actionforex.com/action-insight/market-overview/657507-dollar-breaks-higher-as-core-cpi-pushes-october-fed-hike-odds-above-40"
     },
     {
-      "title": "Crypto Times FOMC/Fed-Leitzins – 2026-10-14",
-      "url": "https://cryptotimes.io/2026/10/14/us-cpi-data-inflation-may-hit-3-7-what-to-expect-for-bitcoin"
+      "title": "Seeking Alpha (zitiert CME FedWatch 49,3 %) – 2026-10-14",
+      "url": "https://seekingalpha.com/news/4652903-october-rate-hike-probability-pops-to-49-now-a-coin-flip-chance-after-cpi-data"
+    },
+    {
+      "title": "Invezz US-CPI September – 2026-10-14",
+      "url": "https://invezz.com/news/2026/10/14/us-cpi-data-comes-hotter-than-expected-will-fed-hike-rates-in-october-or-december/"
+    },
+    {
+      "title": "Federal Reserve Schedule of Public Appearances (Warsh) – 2026-10-13",
+      "url": "https://forth.news/lists/fed/CfzWwHrjg8YVaTusZAaXX"
+    },
+    {
+      "title": "LiteFinance Weekly Economic Calendar 12.–18.10.2026",
+      "url": "https://www.litefinance.org/blog/analysts-opinions/weekly-economic-calendar-for-12102026-18102026/"
+    },
+    {
+      "title": "investingLive Wochenvorschau – 2026-10-10",
+      "url": "https://investinglive.com/news/week-ahead-us-inflation-and-retail-sales-lead-a-busy-economic-calendar-be-aware/"
+    },
+    {
+      "title": "Babypips Analysis (Fundies Cheat Sheet) – 2026-10-12",
+      "url": "https://www.babypips.com/analysis"
     },
     {
       "title": "EZB Geldpolitische Beschlüsse – 2026-09-10",
@@ -511,18 +564,6 @@
     {
       "title": "RBNZ OCR 2,75 % – 2026-09-02",
       "url": "https://www.rbnz.govt.nz/news-and-events/news/2026/09/ocr-increased-by-25-basis-points-to-2-75"
-    },
-    {
-      "title": "investingLive Wochenvorschau – 2026-10-10",
-      "url": "https://investinglive.com/news/week-ahead-us-inflation-and-retail-sales-lead-a-busy-economic-calendar-be-aware/"
-    },
-    {
-      "title": "Babypips Analysis (Fundies Cheat Sheet, Warsh Freitag) – 2026-10-12",
-      "url": "https://www.babypips.com/analysis"
-    },
-    {
-      "title": "XTB Economic Calendar – 2026-10-14",
-      "url": "https://www.xtb.com/int/market-analysis/news-and-research/economic-calendar-us-cpi-inflation-data-in-focus-14-10-2026"
     }
   ]
 }
