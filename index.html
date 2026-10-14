@@ -127,13 +127,6 @@ function stand(M){
       const dt = new Intl.DateTimeFormat('de-DE',{...tz, day:'2-digit', month:'2-digit', year:'numeric'}).format(d);
       const tm = new Intl.DateTimeFormat('de-DE',{...tz, hour:'2-digit', minute:'2-digit'}).format(d);
       return `${wd} ${dt}, ${tm} Uhr`; } }
-  if (M.created_at) {
-    const d = new Date(M.created_at);
-    const fmt = new Intl.DateTimeFormat('de-DE', {timeZone:'Europe/Berlin',weekday:'short',day:'2-digit',month:'2-digit',year:'numeric',hour:'2-digit',minute:'2-digit'});
-    const p = fmt.formatToParts(d);
-    const get = t => p.find(x=>x.type===t)?.value||'';
-    return `${get('weekday')} ${get('day')}.${get('month')}.${get('year')}, ${get('hour')}:${get('minute')} Uhr`;
-  }
   return M.run_label || 'unbekannt';
 }
 
