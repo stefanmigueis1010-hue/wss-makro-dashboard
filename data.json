@@ -1,0 +1,362 @@
+{
+  "meta": {
+    "kw": 43,
+    "week_range": "19.–23.10.2026",
+    "run_type": "beispiel",
+    "run_label": "Mi 14.10.2026, 11:40 Uhr (Beispieldaten, vor US-CPI)",
+    "created_at": "2026-10-14T09:40:00Z",
+    "compare_label": "zur Vorwoche",
+    "compare_date": "2026-10-07",
+    "headline": "Achtung: US-CPI am 14.10. um 14:30 kann Fed-Erwartung und USD-Bias kippen."
+  },
+  "makro": [
+    {
+      "key": "dxy",
+      "label": "US-Dollar-Index (DXY)",
+      "value": 102.2,
+      "unit": "",
+      "date": "2026-10-13",
+      "prev": 102.3,
+      "prev_date": "2026-10-07"
+    },
+    {
+      "key": "dxy_ma20",
+      "label": "DXY 20-Tage-Schnitt",
+      "value": null,
+      "unit": "",
+      "date": null,
+      "prev": null,
+      "prev_date": null
+    },
+    {
+      "key": "dxy_ma50",
+      "label": "DXY 50-Tage-Schnitt",
+      "value": null,
+      "unit": "",
+      "date": null,
+      "prev": null,
+      "prev_date": null
+    },
+    {
+      "key": "spx",
+      "label": "S&P 500",
+      "value": 7806,
+      "unit": "",
+      "date": "2026-10-13",
+      "prev": 7803,
+      "prev_date": "2026-10-07"
+    },
+    {
+      "key": "vix",
+      "label": "VIX",
+      "value": 15.52,
+      "unit": "",
+      "date": "2026-10-05",
+      "prev": null,
+      "prev_date": null
+    },
+    {
+      "key": "us10y",
+      "label": "US-10Y-Rendite",
+      "value": 5.22,
+      "unit": "%",
+      "date": "2026-10-13",
+      "prev": 5.28,
+      "prev_date": "2026-10-07"
+    },
+    {
+      "key": "gold",
+      "label": "Gold",
+      "value": 4163,
+      "unit": "$",
+      "date": "2026-10-13",
+      "prev": 4112,
+      "prev_date": "2026-10-07"
+    },
+    {
+      "key": "usdjpy",
+      "label": "USD/JPY",
+      "value": 158.65,
+      "unit": "",
+      "date": "2026-10-12",
+      "prev": 158.04,
+      "prev_date": "2026-10-07"
+    },
+    {
+      "key": "fedfunds",
+      "label": "Fed-Leitzins",
+      "value": "3,75–4,00 %",
+      "unit": "",
+      "date": "2026-09-16",
+      "prev": null,
+      "prev_date": null
+    },
+    {
+      "key": "fedwatch",
+      "label": "Hike-Wahrscheinlichkeit nächste FOMC (28.10.)",
+      "value": "ca. 17–25 %",
+      "unit": "",
+      "date": "2026-10-13",
+      "prev": null,
+      "prev_date": null
+    }
+  ],
+  "status": [
+    {
+      "key": "dxy",
+      "status": "NEUTRAL",
+      "tone": "neutral",
+      "detail": "Seitwärts um 102. 20/50-Tage-Schnitt: N/A.",
+      "prev_status": null
+    },
+    {
+      "key": "regime",
+      "status": "RISK-ON",
+      "tone": "bull",
+      "detail": "S&P 500 nahe Rekord, VIX ~15,5, Gold und Yen schwächer. Fragil: 10Y über 5,2 %, Öl ~95 $, Nahost-Risiken.",
+      "prev_status": null
+    },
+    {
+      "key": "fed",
+      "status": "HAWKISH",
+      "tone": "bear",
+      "detail": "Zinserhöhung am 16.09., Mehrheit sieht weiteren Schritt bis Jahresende. Oktober-Hike laut Markt eher unwahrscheinlich.",
+      "prev_status": null
+    }
+  ],
+  "termine": [
+    {
+      "day": "Mo",
+      "date": "2026-10-19",
+      "time": "04:00",
+      "event": "China BIP Q3",
+      "region": "CNY",
+      "note": "Einige Quellen nennen 20.10."
+    },
+    {
+      "day": "Di",
+      "date": "2026-10-20",
+      "time": "14:30",
+      "event": "Kanada Verbraucherpreise (CPI)",
+      "region": "CAD",
+      "note": ""
+    },
+    {
+      "day": "Mi",
+      "date": "2026-10-21",
+      "time": "08:00",
+      "event": "UK Verbraucherpreise (CPI)",
+      "region": "GBP",
+      "note": ""
+    },
+    {
+      "day": "Fr",
+      "date": "2026-10-23",
+      "time": "01:30",
+      "event": "Japan Verbraucherpreise (CPI)",
+      "region": "JPY",
+      "note": "Übliche Uhrzeit"
+    },
+    {
+      "day": "Fr",
+      "date": "2026-10-23",
+      "time": "10:00",
+      "event": "Eurozone Flash-PMI",
+      "region": "EUR",
+      "note": "Übliche Uhrzeit"
+    },
+    {
+      "day": "Fr",
+      "date": "2026-10-23",
+      "time": "10:30",
+      "event": "UK Flash-PMI",
+      "region": "GBP",
+      "note": "Übliche Uhrzeit"
+    },
+    {
+      "day": "Fr",
+      "date": "2026-10-23",
+      "time": "15:45",
+      "event": "US Flash-PMI",
+      "region": "USD",
+      "note": ""
+    }
+  ],
+  "cot": {
+    "stichtag": "2026-10-06",
+    "published": "2026-10-09",
+    "unchanged_since_last_run": false,
+    "rows": [
+      {
+        "currency": "USD",
+        "net": 12011,
+        "change": 130,
+        "cot_index": 45,
+        "extreme": false,
+        "positioning": "Netto long, leicht zunehmend"
+      },
+      {
+        "currency": "EUR",
+        "net": -99332,
+        "change": -36076,
+        "cot_index": 100,
+        "extreme": true,
+        "positioning": "Netto short, stark ausgebaut"
+      },
+      {
+        "currency": "GBP",
+        "net": -97611,
+        "change": -6536,
+        "cot_index": 86,
+        "extreme": true,
+        "positioning": "Netto short, ausgebaut"
+      },
+      {
+        "currency": "JPY",
+        "net": 62325,
+        "change": 6885,
+        "cot_index": 22,
+        "extreme": false,
+        "positioning": "Netto long, ausgebaut"
+      },
+      {
+        "currency": "CHF",
+        "net": -23740,
+        "change": 877,
+        "cot_index": 26,
+        "extreme": false,
+        "positioning": "Netto short, leicht abgebaut"
+      },
+      {
+        "currency": "CAD",
+        "net": -90163,
+        "change": -11492,
+        "cot_index": 51,
+        "extreme": false,
+        "positioning": "Netto short, ausgebaut"
+      },
+      {
+        "currency": "AUD",
+        "net": -98588,
+        "change": -35349,
+        "cot_index": 100,
+        "extreme": true,
+        "positioning": "Netto short, stark ausgebaut"
+      },
+      {
+        "currency": "NZD",
+        "net": -29346,
+        "change": -12031,
+        "cot_index": 53,
+        "extreme": false,
+        "positioning": "Netto short, ausgebaut"
+      }
+    ]
+  },
+  "bias": [
+    {
+      "currency": "AUD",
+      "rank": 1,
+      "bias": "LONG",
+      "reason": "RBA hat auf 4,60 % erhöht und lässt weitere Schritte offen, Risk-On stützt; Spekulanten extrem short (Squeeze-Potenzial).",
+      "prev_bias": null,
+      "prev_rank": null
+    },
+    {
+      "currency": "USD",
+      "rank": 2,
+      "bias": "LONG",
+      "reason": "Fed bleibt hawkish, Renditen über 5 %, leicht steigende Netto-Longs; Oktober-Hike kaum eingepreist.",
+      "prev_bias": null,
+      "prev_rank": null
+    },
+    {
+      "currency": "JPY",
+      "rank": 3,
+      "bias": "NEUTRAL",
+      "reason": "Spekulanten bauen Longs auf, Interventionsrisiko stützt; Risk-On und Zinsabstand belasten.",
+      "prev_bias": null,
+      "prev_rank": null
+    },
+    {
+      "currency": "CAD",
+      "rank": 4,
+      "bias": "NEUTRAL",
+      "reason": "Öl um 95 $ stützt, Spekulanten bauen aber Shorts aus; Kanada-CPI am 20.10. gibt die Richtung.",
+      "prev_bias": null,
+      "prev_rank": null
+    },
+    {
+      "currency": "NZD",
+      "rank": 5,
+      "bias": "NEUTRAL",
+      "reason": "Risk-On hilft, doch Spekulanten stocken Shorts auf; kein frischer RBNZ-Impuls.",
+      "prev_bias": null,
+      "prev_rank": null
+    },
+    {
+      "currency": "GBP",
+      "rank": 6,
+      "bias": "SHORT",
+      "reason": "Spekulanten bauen Shorts aus, UK-CPI am 21.10. als Risiko; Positionierung nahe Extrem.",
+      "prev_bias": null,
+      "prev_rank": null
+    },
+    {
+      "currency": "EUR",
+      "rank": 7,
+      "bias": "SHORT",
+      "reason": "Energieimporteur bei hohem Ölpreis, französische Haushaltssorgen; extreme Shorts erhöhen aber das Umkehrrisiko.",
+      "prev_bias": null,
+      "prev_rank": null
+    },
+    {
+      "currency": "CHF",
+      "rank": 8,
+      "bias": "SHORT",
+      "reason": "SNB bei 0 %, während Fed und RBA erhöhen; im Risk-On fehlt Safe-Haven-Nachfrage.",
+      "prev_bias": null,
+      "prev_rank": null
+    }
+  ],
+  "pairs": [
+    {
+      "pair": "AUDCHF",
+      "direction": "LONG",
+      "reason": "Hawkishe RBA gegen SNB bei 0 % im Risk-On-Umfeld."
+    },
+    {
+      "pair": "USDCHF",
+      "direction": "LONG",
+      "reason": "Hawkishe Fed und hohe US-Renditen gegen SNB ohne Zinserhöhungen."
+    },
+    {
+      "pair": "EURAUD",
+      "direction": "SHORT",
+      "reason": "Ölpreis und Haushaltssorgen belasten den Euro, RBA stützt den Aussie. EUR-Shorts sind extrem positioniert."
+    }
+  ],
+  "prev_pairs": null,
+  "sources": [
+    {
+      "title": "Babypips – Market Recap 13.10.2026",
+      "url": "https://www.babypips.com/news/financial-forex-market-recap-2026-10-13"
+    },
+    {
+      "title": "Babypips – Market Recap 07.10.2026",
+      "url": "https://www.babypips.com/news/financial-forex-market-recap-2026-10-07"
+    },
+    {
+      "title": "FXStreet – COT Report 09.10.2026",
+      "url": "https://www.fxstreet.com/analysis/cot-report-october-09-2026-202610111854"
+    },
+    {
+      "title": "Admiral Markets – Fed-Zinsentscheid 16.09.2026",
+      "url": "https://admiralmarkets.com/analytics/traders-blog/fed-raised-interest-rates"
+    },
+    {
+      "title": "ThriveInMarkets – Kalender 19.–23.10.2026",
+      "url": "https://thriveinmarkets.com/calendar/2026-10-19/"
+    }
+  ]
+}
