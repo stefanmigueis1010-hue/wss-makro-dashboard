@@ -311,13 +311,7 @@ window.addEventListener('resize', sendHeight);
 
 fetch('data.json?t=' + Date.now(), {cache:'no-store'})
   .then(r => { if(!r.ok) throw new Error(r.status); return r.json(); })
-  .then(d => {
-    if (!d || d.meta && d.meta.run_type === 'leer' || !d.bias || d.bias.length === 0) {
-      document.getElementById('app').innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:80vh;flex-direction:column;font-family:Inter,sans-serif;color:#888;background:#0d0d0d;"><div style="font-size:2rem;margin-bottom:1rem;">📊</div><div style="font-size:1.1rem;font-weight:600;color:#ccc;">Noch keine aktuellen Daten</div><div style="font-size:0.9rem;margin-top:0.5rem;">Nächste Aktualisierung: Montag & Mittwoch 07:00 Uhr</div></div>';
-      return;
-    }
-    render(d);
-  })
+  .then(render)
   .catch(e => {
     document.getElementById('app').innerHTML = '<div class="err">Das Dashboard wird gerade aktualisiert.<br><span style="color:#9A9A9A;font-size:13px">Bitte in ein paar Minuten neu laden.</span></div>';
     console.error('data.json konnte nicht geladen werden (muss im selben Ordner wie index.html liegen):', e);
