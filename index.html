@@ -224,6 +224,7 @@ function render(D){
   /* Paare */
   const s5 = sec('Top 3 Paare','Größte Divergenz zwischen Long- und Short-Währungen.','paare');
   const pg = el('div','pairs'); s5.append(pg);
+  if(!D.pairs.length) s5.append(el('p','note','Diese Woche erfüllt kein Paar die Mindest-Divergenz von 3 Punkten – keine Top-Idee.'));
   const prevPairs = D.prev_pairs || null;
   D.pairs.forEach((r,i) => { const c = el('div','pc');
     const n = el('div','n','IDEE ' + (i+1));
@@ -286,7 +287,10 @@ window.addEventListener('resize', sendHeight);
 fetch('data.json?t=' + Date.now(), {cache:'no-store'})
   .then(r => { if(!r.ok) throw new Error(r.status); return r.json(); })
   .then(render)
-  .catch(e => { document.getElementById('app').innerHTML = '<div class="err">Daten konnten nicht geladen werden.</div>'; console.error(e); });
+  .catch(e => {
+    document.getElementById('app').innerHTML = '<div class="err">Das Dashboard wird gerade aktualisiert.<br><span style="color:#9A9A9A;font-size:13px">Bitte in ein paar Minuten neu laden.</span></div>';
+    console.error('data.json konnte nicht geladen werden (muss im selben Ordner wie index.html liegen):', e);
+  });
 </script>
 </body>
 </html>
