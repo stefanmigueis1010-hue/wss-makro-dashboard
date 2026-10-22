@@ -177,6 +177,7 @@ function render(D){
   tile('dxy','US-Dollar-Index',['dxy','dxy_ma20','dxy_ma50'],false,'dxy');
   tile('regime','Regime',['spx','vix','us10y','gold','usdjpy']);
   tile('fed','Fed',['fedfunds','fedwatch'],true);
+  if(D.status.find(r=>r.key==='btc')) tile('btc','Bitcoin (BTC/USD)',['btc'],false,'btc');
 
   /* Termine */
   const s2 = sec('Termine der Woche','Deutsche Zeit. Bitte kurz vor dem Event im Kalender gegenprüfen.','termine');
