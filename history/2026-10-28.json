@@ -1,0 +1,574 @@
+{
+  "meta": {
+    "kw": 44,
+    "week_range": "26.–30.10.2026",
+    "run_type": "mittwoch",
+    "run_label": "Mi 28.10.2026, 07:00 Uhr",
+    "created_at": "2026-10-28T06:02:14.190Z",
+    "compare_label": "zu Montag",
+    "compare_date": "2026-10-26",
+    "headline": "Größtes Risiko der Woche ist der FOMC-Entscheid am 28.10. um 19:00 mit Warshs Pressekonferenz zum Dezember-Pfad, direkt gefolgt von US-BIP und PCE sowie der EZB am Donnerstag und der BoJ am Freitag.",
+    "methode": "Bias = COT-Richtung (±1) + COT-Aufbau (±1) + Notenbank (±2) + Regime (±1); LONG ab +2, SHORT ab −2."
+  },
+  "makro": [
+    {
+      "key": "dxy",
+      "label": "US-Dollar-Index (DXY)",
+      "value": 102.3,
+      "unit": "",
+      "date": "2026-10-27",
+      "prev": 101.8,
+      "prev_date": "2026-10-23"
+    },
+    {
+      "key": "dxy_ma20",
+      "label": "DXY 20-Tage-EMA",
+      "value": 101.66,
+      "unit": "",
+      "date": "2026-10-21",
+      "prev": 101.65,
+      "prev_date": "2026-10-23"
+    },
+    {
+      "key": "dxy_ma50",
+      "label": "DXY 50-Tage-EMA",
+      "value": 101.11,
+      "unit": "",
+      "date": "2026-10-27",
+      "prev": 100.94,
+      "prev_date": "2026-10-20"
+    },
+    {
+      "key": "spx",
+      "label": "S&P 500",
+      "value": 7726,
+      "unit": "",
+      "date": "2026-10-27",
+      "prev": 7623.68,
+      "prev_date": "2026-10-23"
+    },
+    {
+      "key": "vix",
+      "label": "VIX",
+      "value": 18.39,
+      "unit": "",
+      "date": "2026-10-26",
+      "prev": 19.45,
+      "prev_date": "2026-10-23"
+    },
+    {
+      "key": "us10y",
+      "label": "US-10Y-Rendite",
+      "value": 5,
+      "unit": "%",
+      "date": "2026-10-27",
+      "prev": 5,
+      "prev_date": "2026-10-23"
+    },
+    {
+      "key": "gold",
+      "label": "Gold",
+      "value": 4060,
+      "unit": "$",
+      "date": "2026-10-27",
+      "prev": 4000,
+      "prev_date": "2026-10-23"
+    },
+    {
+      "key": "usdjpy",
+      "label": "USD/JPY",
+      "value": 157.89,
+      "unit": "",
+      "date": "2026-10-27",
+      "prev": 156.85,
+      "prev_date": "2026-10-23"
+    },
+    {
+      "key": "fedfunds",
+      "label": "Fed-Leitzins",
+      "value": "3,75–4,00 %",
+      "unit": "",
+      "date": "2026-09-16",
+      "prev": "3,75–4,00 %",
+      "prev_date": "2026-09-16"
+    },
+    {
+      "key": "fedwatch",
+      "label": "Hike-Wahrscheinlichkeit nächste FOMC (28.10.)",
+      "value": "ca. 7 %",
+      "unit": "",
+      "date": "2026-10-27",
+      "prev": "ca. 9 %",
+      "prev_date": "2026-10-26"
+    }
+  ],
+  "status": [
+    {
+      "key": "dxy",
+      "status": "BULLISH",
+      "detail": "DXY 102.3 über 20-Tage-EMA (101.66) und über 50-Tage-EMA (101.11).",
+      "tone": "bull",
+      "prev_status": "BULLISH"
+    },
+    {
+      "key": "regime",
+      "status": "RISK-ON",
+      "detail": "Punkte +3: VIX 18.39 (+1), S&P 500 +1,34 % (+1), Gold +1,50 % (0), USD/JPY +0,66 % (+1).",
+      "tone": "bull",
+      "prev_status": "NEUTRAL"
+    },
+    {
+      "key": "fed",
+      "status": "HAWKISH",
+      "detail": "Die Fed hob am 16.09.2026 einstimmig um 25 Bp auf 3,75–4,00 % an; laut Protokoll vom 07.10. erwartet die Mehrheit eine weitere Erhöhung bis Ende 2026.",
+      "tone": "bear",
+      "prev_status": "HAWKISH"
+    }
+  ],
+  "termine": [
+    {
+      "day": "Mi",
+      "date": "2026-10-28",
+      "time": "01:30",
+      "event": "Australien Verbraucherpreise (Sept.)",
+      "region": "AUD",
+      "note": ""
+    },
+    {
+      "day": "Mi",
+      "date": "2026-10-28",
+      "time": "02:00",
+      "event": "RBNZ Zinsentscheid",
+      "region": "NZD",
+      "note": "OCR mit 4:3 Stimmen bei 2,75 % gehalten (erwartet: 3,00 %)"
+    },
+    {
+      "day": "Mi",
+      "date": "2026-10-28",
+      "time": "13:30",
+      "event": "UK-Herbsthaushalt",
+      "region": "GBP",
+      "note": "Übliche Uhrzeit"
+    },
+    {
+      "day": "Mi",
+      "date": "2026-10-28",
+      "time": "14:45",
+      "event": "BoC Zinsentscheid und Monetary Policy Report",
+      "region": "CAD",
+      "note": "Pressekonferenz 15:30"
+    },
+    {
+      "day": "Mi",
+      "date": "2026-10-28",
+      "time": "19:00",
+      "event": "FOMC Zinsentscheid",
+      "region": "USD",
+      "note": "Pressekonferenz Warsh 19:30; keine neuen Projektionen"
+    },
+    {
+      "day": "Do",
+      "date": "2026-10-29",
+      "time": "13:30",
+      "event": "US-BIP Q3 (erste Schätzung)",
+      "region": "USD",
+      "note": ""
+    },
+    {
+      "day": "Do",
+      "date": "2026-10-29",
+      "time": "13:30",
+      "event": "US-PCE- und Kern-PCE-Preisindex (Sept.)",
+      "region": "USD",
+      "note": ""
+    },
+    {
+      "day": "Do",
+      "date": "2026-10-29",
+      "time": "14:15",
+      "event": "EZB Zinsentscheid",
+      "region": "EUR",
+      "note": "Pressekonferenz Lagarde 14:45"
+    },
+    {
+      "day": "Fr",
+      "date": "2026-10-30",
+      "time": "00:30",
+      "event": "Tokio Verbraucherpreise (Okt.)",
+      "region": "JPY",
+      "note": "Übliche Uhrzeit"
+    },
+    {
+      "day": "Fr",
+      "date": "2026-10-30",
+      "time": "04:00",
+      "event": "BoJ Zinsentscheid und Outlook Report",
+      "region": "JPY",
+      "note": "Übliche Uhrzeit (kein fester Termin, ca. 03:00 GMT)"
+    },
+    {
+      "day": "Fr",
+      "date": "2026-10-30",
+      "time": "11:00",
+      "event": "Eurozone BIP Q3 (Schnellschätzung)",
+      "region": "EUR",
+      "note": ""
+    },
+    {
+      "day": "Fr",
+      "date": "2026-10-30",
+      "time": "14:00",
+      "event": "Deutschland Verbraucherpreise (Okt., vorläufig)",
+      "region": "EUR",
+      "note": "Übliche Uhrzeit"
+    }
+  ],
+  "cot": {
+    "stichtag": "2026-10-20",
+    "published": "2026-10-23",
+    "rows": [
+      {
+        "currency": "USD",
+        "net": 15044,
+        "change": 2125,
+        "cot_index": 33,
+        "positioning": "Netto long, ausgebaut",
+        "extreme": false
+      },
+      {
+        "currency": "EUR",
+        "net": -134524,
+        "change": 3049,
+        "cot_index": 97,
+        "positioning": "Netto short, abgebaut",
+        "extreme": true
+      },
+      {
+        "currency": "GBP",
+        "net": -80420,
+        "change": 26544,
+        "cot_index": 67,
+        "positioning": "Netto short, abgebaut",
+        "extreme": false
+      },
+      {
+        "currency": "JPY",
+        "net": 69878,
+        "change": 19671,
+        "cot_index": 19,
+        "positioning": "Netto long, ausgebaut",
+        "extreme": true
+      },
+      {
+        "currency": "CHF",
+        "net": -18150,
+        "change": 3928,
+        "cot_index": 13,
+        "positioning": "Netto short, abgebaut",
+        "extreme": true
+      },
+      {
+        "currency": "CAD",
+        "net": -74709,
+        "change": 20056,
+        "cot_index": 42,
+        "positioning": "Netto short, abgebaut",
+        "extreme": false
+      },
+      {
+        "currency": "AUD",
+        "net": -127292,
+        "change": -9993,
+        "cot_index": 100,
+        "positioning": "Netto short, ausgebaut",
+        "extreme": true
+      },
+      {
+        "currency": "NZD",
+        "net": -58149,
+        "change": -11148,
+        "cot_index": 89,
+        "positioning": "Netto short, ausgebaut",
+        "extreme": true
+      }
+    ],
+    "unchanged_since_last_run": true
+  },
+  "notenbanken": [
+    {
+      "currency": "USD",
+      "bank": "Fed",
+      "stance": "HAWKISH",
+      "changed": false,
+      "reason": "Die Fed hob am 16.09.2026 einstimmig um 25 Bp auf 3,75–4,00 % an; laut Protokoll vom 07.10. erwartet die Mehrheit eine weitere Erhöhung bis Ende 2026.",
+      "date": "2026-10-07",
+      "source": "https://www.federalreserve.gov"
+    },
+    {
+      "currency": "EUR",
+      "bank": "EZB",
+      "stance": "HAWKISH",
+      "changed": false,
+      "reason": "Die EZB hob am 10.09.2026 die Leitzinsen um 25 Bp an (Einlagensatz 2,50 %) und legt sich auf keinen weiteren Zinspfad fest.",
+      "date": "2026-09-10",
+      "source": "https://www.ecb.europa.eu"
+    },
+    {
+      "currency": "GBP",
+      "bank": "BoE",
+      "stance": "NEUTRAL",
+      "changed": false,
+      "reason": "Die BoE hielt Bank Rate am 17.09.2026 mit 6:3 Stimmen bei 3,75 % (drei Stimmen für eine Erhöhung); Bailey nennt eine Erhöhung bei anhaltend hohen Energiepreisen wahrscheinlicher, aber ohne feste Zusage.",
+      "date": "2026-09-17",
+      "source": "https://www.bankofengland.co.uk"
+    },
+    {
+      "currency": "JPY",
+      "bank": "BoJ",
+      "stance": "HAWKISH",
+      "changed": false,
+      "reason": "Die BoJ hob am 18.09.2026 mit 7:2 Stimmen auf 1,25 % an und will die Zinsen je nach Wirtschafts- und Preisentwicklung weiter erhöhen.",
+      "date": "2026-09-18",
+      "source": "https://www.boj.or.jp"
+    },
+    {
+      "currency": "CHF",
+      "bank": "SNB",
+      "stance": "NEUTRAL",
+      "changed": false,
+      "reason": "Die SNB hielt den Leitzins am 24.09.2026 zum fünften Mal in Folge bei 0 %; Schlegel sieht die Notenbank bei der Inflation in einer komfortablen Lage.",
+      "date": "2026-09-24",
+      "source": "https://www.snb.ch"
+    },
+    {
+      "currency": "CAD",
+      "bank": "BoC",
+      "stance": "NEUTRAL",
+      "changed": false,
+      "reason": "Die BoC hielt am 02.09.2026 zum siebten Mal in Folge bei 2,25 %; Macklem stellte Erhöhungen nur unter der Bedingung anhaltend hoher Inflation in Aussicht (Rede vom 21.09.).",
+      "date": "2026-09-21",
+      "source": "https://www.bankofcanada.ca"
+    },
+    {
+      "currency": "AUD",
+      "bank": "RBA",
+      "stance": "HAWKISH",
+      "changed": false,
+      "reason": "Laut Protokoll der Septembersitzung hob die RBA einstimmig um 25 Bp auf 4,60 % an und hält weitere Erhöhungen offen.",
+      "date": "2026-10-13",
+      "source": "https://www.rba.gov.au"
+    },
+    {
+      "currency": "NZD",
+      "bank": "RBNZ",
+      "stance": "HAWKISH",
+      "changed": false,
+      "reason": "Die RBNZ hob den OCR am 02.09.2026 um 25 Bp auf 2,75 % an (zweite Erhöhung in Folge) und hält weitere Erhöhungen für möglich.",
+      "date": "2026-09-02",
+      "source": "https://www.rbnz.govt.nz"
+    }
+  ],
+  "bias": [
+    {
+      "currency": "USD",
+      "score": 4,
+      "bias": "LONG",
+      "reason": "COT netto long (+1), Longs ausgebaut (+1), Fed hawkish (+2), RISK-ON (0) → +4 Punkte.",
+      "score_details": {
+        "cot_richtung": 1,
+        "cot_aufbau": 1,
+        "notenbank": 2,
+        "regime": 0
+      },
+      "rank": 1,
+      "prev_bias": "LONG",
+      "prev_rank": 2
+    },
+    {
+      "currency": "JPY",
+      "score": 3,
+      "bias": "LONG",
+      "reason": "COT netto long (+1), Longs ausgebaut (+1), BoJ hawkish (+2), RISK-ON (-1) → +3 Punkte. ⚠️ COT extrem positioniert – Umkehrgefahr.",
+      "score_details": {
+        "cot_richtung": 1,
+        "cot_aufbau": 1,
+        "notenbank": 2,
+        "regime": -1
+      },
+      "rank": 2,
+      "prev_bias": "LONG",
+      "prev_rank": 1
+    },
+    {
+      "currency": "EUR",
+      "score": 1,
+      "bias": "NEUTRAL",
+      "reason": "COT netto short (-1), Position abgebaut (0), EZB hawkish (+2), RISK-ON (0) → +1 Punkte. ⚠️ COT extrem positioniert – Umkehrgefahr.",
+      "score_details": {
+        "cot_richtung": -1,
+        "cot_aufbau": 0,
+        "notenbank": 2,
+        "regime": 0
+      },
+      "rank": 3,
+      "prev_bias": "NEUTRAL",
+      "prev_rank": 3
+    },
+    {
+      "currency": "AUD",
+      "score": 1,
+      "bias": "NEUTRAL",
+      "reason": "COT netto short (-1), Shorts ausgebaut (-1), RBA hawkish (+2), RISK-ON (+1) → +1 Punkte. ⚠️ COT extrem positioniert – Umkehrgefahr.",
+      "score_details": {
+        "cot_richtung": -1,
+        "cot_aufbau": -1,
+        "notenbank": 2,
+        "regime": 1
+      },
+      "rank": 4,
+      "prev_bias": "NEUTRAL",
+      "prev_rank": 4
+    },
+    {
+      "currency": "NZD",
+      "score": 1,
+      "bias": "NEUTRAL",
+      "reason": "COT netto short (-1), Shorts ausgebaut (-1), RBNZ hawkish (+2), RISK-ON (+1) → +1 Punkte. ⚠️ COT extrem positioniert – Umkehrgefahr.",
+      "score_details": {
+        "cot_richtung": -1,
+        "cot_aufbau": -1,
+        "notenbank": 2,
+        "regime": 1
+      },
+      "rank": 5,
+      "prev_bias": "NEUTRAL",
+      "prev_rank": 5
+    },
+    {
+      "currency": "CAD",
+      "score": 0,
+      "bias": "NEUTRAL",
+      "reason": "COT netto short (-1), Position abgebaut (0), BoC neutral (0), RISK-ON (+1) → 0 Punkte.",
+      "score_details": {
+        "cot_richtung": -1,
+        "cot_aufbau": 0,
+        "notenbank": 0,
+        "regime": 1
+      },
+      "rank": 6,
+      "prev_bias": "NEUTRAL",
+      "prev_rank": 7
+    },
+    {
+      "currency": "GBP",
+      "score": -1,
+      "bias": "NEUTRAL",
+      "reason": "COT netto short (-1), Position abgebaut (0), BoE neutral (0), RISK-ON (0) → -1 Punkte.",
+      "score_details": {
+        "cot_richtung": -1,
+        "cot_aufbau": 0,
+        "notenbank": 0,
+        "regime": 0
+      },
+      "rank": 7,
+      "prev_bias": "NEUTRAL",
+      "prev_rank": 6
+    },
+    {
+      "currency": "CHF",
+      "score": -2,
+      "bias": "SHORT",
+      "reason": "COT netto short (-1), Position abgebaut (0), SNB neutral (0), RISK-ON (-1) → -2 Punkte. ⚠️ COT extrem positioniert – Umkehrgefahr.",
+      "score_details": {
+        "cot_richtung": -1,
+        "cot_aufbau": 0,
+        "notenbank": 0,
+        "regime": -1
+      },
+      "rank": 8,
+      "prev_bias": "NEUTRAL",
+      "prev_rank": 8
+    }
+  ],
+  "pairs": [
+    {
+      "pair": "USDCHF",
+      "direction": "LONG",
+      "reason": "USD +4 (#1) gegen CHF -2 (#8): 6 Punkte Differenz. ⚠️ CHF extrem positioniert."
+    },
+    {
+      "pair": "CHFJPY",
+      "direction": "SHORT",
+      "reason": "CHF -2 (#8) gegen JPY +3 (#2): 5 Punkte Differenz. ⚠️ CHF und JPY extrem positioniert."
+    },
+    {
+      "pair": "GBPUSD",
+      "direction": "SHORT",
+      "reason": "GBP -1 (#7) gegen USD +4 (#1): 5 Punkte Differenz."
+    }
+  ],
+  "prev_pairs": [
+    {
+      "pair": "CHFJPY",
+      "direction": "SHORT"
+    },
+    {
+      "pair": "CADJPY",
+      "direction": "SHORT"
+    },
+    {
+      "pair": "USDCHF",
+      "direction": "LONG"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Babypips Financial & Forex Market Recap – 2026-10-27",
+      "url": "https://www.babypips.com/news/daily-financial-forex-market-recap-2026-10-27"
+    },
+    {
+      "title": "Saxo Options Brief – 2026-10-27",
+      "url": "https://www.home.saxo/en-mena/content/articles/options/premium-leaves-a-fed-week---options-brief---27-october-2026-27102026"
+    },
+    {
+      "title": "FXStreet US Dollar Index Price Forecast (50-Tage-EMA) – 2026-10-27",
+      "url": "https://www.fxstreet.com/news/us-dollar-index-price-forecast-holds-above-10200-after-rising-above-nine-day-ema-202610270905"
+    },
+    {
+      "title": "FXStreet United States Dollar Index (20-Tage-EMA) – 2026-10-21",
+      "url": "https://www.fxstreet.com/news/united-states-dollar-index-faces-mild-pressure-ahead-of-meta-q3-earnings-202610211147"
+    },
+    {
+      "title": "Kiplinger October Fed Meeting Live (CME FedWatch) – 2026-10-27",
+      "url": "https://www.kiplinger.com/investing/live/fed-meeting-updates-and-commentary-october-2026"
+    },
+    {
+      "title": "FXStreet COT report – 2026-10-25",
+      "url": "https://www.fxstreet.com/analysis/cot-report-october-25-2026-202610252207"
+    },
+    {
+      "title": "RBNZ OCR held at 2.75% – 2026-10-28",
+      "url": "https://www.rbnz.govt.nz/news-and-events/news/2026/10/ocr-held-at-2-75-percent"
+    },
+    {
+      "title": "Newsquawk RBNZ Breman – 2026-10-28",
+      "url": "https://www.newsquawk.com/headlines/rbnz-governor-breman-says-highly-likely-well-see-ocr-increases-at-coming-meetings-also-notes-good-conditions-for-inflation-slowing-in-2027"
+    },
+    {
+      "title": "Bank of Canada Media Advisory – 2026-10-28",
+      "url": "https://www.bankofcanada.ca/2026/10/fad-announcement-release-mpr-2026-10-28/"
+    },
+    {
+      "title": "Babypips Fundies Cheat Sheet Oct 26–30 – 2026-10-25",
+      "url": "https://www.babypips.com/analysis/fundies-cheat-sheet-2026-10-26-fed-big-tech-oil-saudi"
+    },
+    {
+      "title": "Admiral Markets Central Bank Super Week – 2026-10",
+      "url": "https://admiralmarkets.com/analytics/traders-blog/central-bank-super-week-october-2026"
+    },
+    {
+      "title": "Newsquawk Week in Focus 26.–30.10.2026",
+      "url": "https://www.newsquawk.com/headlines/week-in-focus-26-30th-october-2026-fomc-boc-rbnz-ecb-boj-policy-decisions-us-pce"
+    }
+  ]
+}
