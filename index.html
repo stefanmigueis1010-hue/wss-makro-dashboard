@@ -175,7 +175,7 @@ function render(D){
     c.append(kvBox(keys)); g.append(c);
   };
   tile('dxy','US-Dollar-Index',['dxy','dxy_ma20','dxy_ma50'],false,'dxy');
-  tile('regime','Regime',['spx','vix','us10y','gold','usdjpy']);
+  tile('regime','Regime',['spx','vix','us10y','gold','usdjpy','btc']);
   tile('fed','Fed',['fedfunds','fedwatch'],true);
   if(D.status.find(r=>r.key==='btc')) tile('btc','Bitcoin (BTC/USD)',['btc'],false,'btc');
 
