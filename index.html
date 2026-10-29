@@ -200,7 +200,7 @@ function render(D){
   C.rows.forEach(r => { const tr = el('tr'); const n = Number(r.net), ch = Number(r.change);
     tr.append(el('td','cur', r.currency), el('td', n >= 0 ? 'up' : 'dn', s0.format(n)),
       el('td', ch >= 0 ? 'up' : 'dn', (ch >= 0 ? '▲ ' : '▼ ') + s0.format(ch)),
-      el('td', null, isNum(r.cot_index) ? f0.format(r.cot_index) + ' %' : 'N/A'),
+      el('td', null, isNum(r.index) ? f0.format(r.index) + ' %' : 'N/A'),
       el('td', null, r.extreme ? '⚠️' : '–'), el('td','pos', r.positioning || ''));
     cb.append(tr); });
   ct.append(cb); c3.append(ct); cg.append(c3);
