@@ -1,0 +1,2 @@
+Hier das WSS-Logo als logo.png ablegen (transparentes PNG, ca. 120 px hoch).
+Das Dashboard zeigt es dann automatisch oben links. Ohne Datei erscheint das Monogramm "WSS".
