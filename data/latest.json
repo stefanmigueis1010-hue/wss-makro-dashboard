@@ -3,268 +3,674 @@
   "meta": {
     "kw": 46,
     "year": 2026,
-    "created": "2026-11-10T11:00:00+01:00",
-    "created_label": "Di, 10.11.2026, 11:00 Uhr",
+    "created": "2026-11-10T16:42:00+01:00",
+    "created_label": "Di, 10.11.2026, 16:42 Uhr",
     "period_label": "09.–13.11.2026",
     "run": "manuell",
     "next_update": "2026-11-11T07:00:00+01:00",
     "next_update_label": "Mi, 11.11.2026, 07:00 Uhr",
-    "headline": "Fed hawkish, Märkte im Risk-off: Pfund, Dollar und Yen vorn, Kiwi und Bitcoin unter Druck. Die US-Inflationsdaten heute um 14:30 können das Bild schnell drehen.",
-    "today": {
-      "time": "14:30",
-      "title": "US-Verbraucherpreise (CPI) Oktober",
-      "note": "Prognose +0,3 % m/m (Kern +0,2 %). Noch nicht in diesen Daten enthalten."
-    },
+    "headline": "Fed hawkish (Dezember-Erhöhung nahezu eingepreist), Regime neutral: Pfund und CAD vorn, Bitcoin am schwächsten. Nach dem heißen CPI folgen UK-BIP (Do) und US-PPI (Fr).",
     "notes": [
-      "Aktien, VIX, Gold, US-Rendite und USD/JPY: Schlusskurse vom 06.11.2026, verglichen mit dem 30.10.2026.",
-      "DXY: Stand 10.11.2026 vormittags. Bitcoin: Stand 07.11.2026, 19:01 Uhr New Yorker Zeit.",
-      "Die US-Inflationsdaten von heute 14:30 Uhr sind noch nicht enthalten. Das Update am Mi, 11.11.2026, 07:00 Uhr berücksichtigt sie."
+      "S&P 500, VIX, US-Rendite, Gold und USD/JPY: Schlusskurse vom 09.11.2026, 5-Handelstage-Veränderung. Die heutigen US-Inflationsdaten (14:30 Uhr) sind darin nicht enthalten.",
+      "DXY: Stand 10.11.2026, 16:29 Uhr, verglichen mit dem Schluss vom 06.11. (102,30). Der Schluss vom 09.11. (101,65) lag noch unter der SMA20. Bitcoin: Stand 10.11.2026, 16:39 Uhr, verglichen mit dem Schluss vom 02.11.",
+      "FedWatch-Werte nach dem CPI vom 10.11.2026. Notenbankdaten aus den Entscheiden vom 28.10. bis 05.11.2026. COT-Stichtag 03.11.2026."
     ]
   },
   "makro": {
     "dxy": {
       "name": "US-Dollar-Index",
       "symbol": "DXY",
-      "status": "NEUTRAL",
-      "value": 101.7,
-      "decimals": 1,
+      "status": "BULLISH",
+      "value": 102.11,
+      "decimals": 2,
       "unit": "",
-      "value_label": "Stand 10.11., vormittags",
-      "change_pct": -0.5,
-      "change_label": "ggü. Vorwochenschluss 06.11. (≈ 102,2)",
-      "sma20": null,
-      "sma50": null,
-      "above_sma20": false,
+      "value_label": "Stand Di 10.11., 16:29 Uhr",
+      "change_pct": -0.2,
+      "change_label": "ggü. Vorwoche (06.11.)",
+      "sma20": 101.93,
+      "sma50": 101.13,
+      "above_sma20": true,
       "above_sma50": true,
-      "approx": true,
+      "approx": false,
       "points": [
-        "Starker US-Arbeitsmarkt (+165.000 Stellen) hob den Index am 06.11. über 102.",
-        "Seitdem Rücklauf auf 101,7 vor den US-Inflationsdaten heute um 14:30.",
-        "Unter der 20-Tage-Linie, über der 50-Tage-Linie: kurzfristig schwächer, mittelfristig intakt."
+        "Hohe US-Kerninflation (+0,3 %) und Wallers Signal für eine Dezember-Erhöhung (eventuell 50 Basispunkte) stützen den Dollar am 10.11.",
+        "Der Kurs liegt mit 102,11 knapp über der SMA20 (101,93) und über der SMA50 (101,13). Der Schluss vom 09.11. (101,65) lag noch unter der SMA20.",
+        "Zur Vorwoche −0,2 % (Schluss 06.11.: 102,30)."
       ]
     },
     "regime": {
-      "status": "RISK-OFF",
-      "score_label": "4 von 5 Signalen risk-off",
+      "status": "NEUTRAL",
+      "score_label": "1 von 5 Signalen risk-off",
       "indicators": [
-        { "name": "S&P 500", "value": "7.376,86", "change": "−2,7 %", "signal": "off", "date": "06.11." },
-        { "name": "VIX", "value": "25,58", "change": "+6,2 Pkt.", "signal": "off", "date": "06.11." },
-        { "name": "US-Rendite 10 J.", "value": "4,86 %", "change": "−7 Bp.", "signal": "off", "date": "06.11." },
-        { "name": "Gold", "value": "4.074 $", "change": "+4,9 %", "signal": "off", "date": "06.11." },
-        { "name": "USD/JPY", "value": "157,8", "change": "±0,0 %", "signal": "neutral", "date": "06.11." }
+        {
+          "name": "S&P 500",
+          "value": "7.549,94",
+          "change": "+0,1 %",
+          "signal": "neutral",
+          "date": "09.11."
+        },
+        {
+          "name": "VIX",
+          "value": "19,92",
+          "change": "−1,2 Pkt.",
+          "signal": "neutral",
+          "date": "09.11."
+        },
+        {
+          "name": "US-Rendite 10 J.",
+          "value": "4,86 %",
+          "change": "−3 Bp.",
+          "signal": "neutral",
+          "date": "09.11."
+        },
+        {
+          "name": "Gold",
+          "value": "4.115 $",
+          "change": "+3,7 %",
+          "signal": "off",
+          "date": "09.11."
+        },
+        {
+          "name": "USD/JPY",
+          "value": "158,29",
+          "change": "+0,4 %",
+          "signal": "neutral",
+          "date": "09.11."
+        }
       ],
-      "conclusion": "KI-Ausverkauf am 05.11. (S&P 500 −4,4 %, VIX-Spitze 28,15). Der Yen bestätigt noch nicht, Öl fällt auf Friedenshoffnungen (WTI −12 % zur Vorwoche)."
+      "conclusion": "Nur Gold (+3,7 %) signalisiert Risk-off. Aktien sind auf Wochensicht stabil, der VIX liegt mit 19,92 knapp unter der Schwelle von 20, und die Rendite gab leicht nach. Insgesamt kein klares Regime."
     },
     "fed": {
       "status": "HAWKISH",
       "rate": "3,75–4,00 %",
-      "last_decision": "28.10.: gehalten (10:2, zwei Stimmen für eine Erhöhung)",
+      "last_decision": "28.10.: gehalten (10:2, Cook und Hammack stimmten für eine Erhöhung)",
       "next_meeting": "08.–09.12.2026",
       "fedwatch": {
         "meeting": "09.12.2026",
-        "hike": 84,
-        "hold": 16,
+        "hike": 100,
+        "hold": 0,
         "cut": 0,
         "date": "10.11.2026",
-        "source": "CME FedWatch via Trading Economics"
+        "source": "CME FedWatch via ActionForex"
       },
       "points": [
-        "Dezember-Erhöhung zu rund 84 % eingepreist, eine Woche zuvor rund 74 %.",
-        "Arbeitsmarkt Oktober: +165.000 Stellen statt rund 60.000 erwartet, Quote 4,1 %.",
-        "Daly: weitere Erhöhungen könnten nötig sein. Barkin: mit Bedacht vorgehen."
+        "Nach dem CPI sind für Dezember 88,7 % für +25 Bp und 11,3 % für +50 Bp eingepreist. Das Szenario Halten ist ausgepreist.",
+        "Waller (10.11., London): unterstützt eine Erhöhung im Dezember. Bei Kern-CPI um +0,3 % oder höher sollte man 50 Bp erwägen. Der Kern-CPI lag bei +0,3 %.",
+        "Arbeitsmarkt Oktober: +165.000 Stellen, über der Erwartung. Das Statement vom 28.10. spricht von „strong“ beim Wachstum und davon, dass die Inflation erhöht bleibt."
       ]
     },
     "btc": {
       "name": "Bitcoin",
       "symbol": "BTC/USD",
       "status": "BEARISH",
-      "value": 75780,
+      "value": 73237,
       "decimals": 0,
       "unit": "$",
-      "value_label": "Stand 07.11., 19:01 Uhr (New York)",
-      "change_pct": -2.2,
-      "change_label": "seit 01.11.",
-      "sma20": 79400,
-      "sma50": null,
+      "value_label": "Stand Di 10.11., 16:39 Uhr",
+      "change_pct": -4.5,
+      "change_label": "ggü. Vorwoche (02.11.)",
+      "sma20": 78581,
+      "sma50": 81620,
       "above_sma20": false,
       "above_sma50": false,
-      "approx": true,
+      "approx": false,
       "extras": [
-        { "label": "Spot-ETF-Flüsse KW 45", "value": "−1,28 Mrd. $", "signal": "down" },
-        { "label": "Fear & Greed", "value": "28 (Angst)", "signal": "down" }
+        {
+          "label": "Spot-ETF-Flüsse KW 45 (02.–06.11.)",
+          "value": "−1,28 Mrd. $",
+          "signal": "down"
+        },
+        {
+          "label": "Fear & Greed (10.11.)",
+          "value": "32 (Angst)",
+          "signal": "down"
+        }
       ],
       "points": [
-        "Wochenspanne 74.921–81.004 $, rund 40 % unter dem Rekordhoch von 126.198 $ (06.10.2025).",
-        "Spot-ETFs: an 4 von 5 Tagen Abflüsse, zusammen 1,28 Mrd. $.",
-        "CME-Spekulanten leicht netto long (+2.230 Kontrakte), Basis-Trades verzerren das Bild."
+        "Der Kurs liegt unter dem Wochenendtief von rund 73.510 $ (Sonntag, 08.11.) und unter SMA20 und SMA50.",
+        "Spot-ETFs: am 09.11. weitere −201 Mio. $, der dritte Abflusstag in Folge. BlackRocks IBIT verzeichnet seit dem 30.10. zusammen −1,66 Mrd. $.",
+        "CME-Spekulanten sind netto leicht long (+2.230 Kontrakte, Vorwoche −490). Die hawkishe Fed mit eingepreister Dezember-Erhöhung belastet Risikoanlagen."
       ]
     }
   },
   "termine": [
-    { "date": "2026-11-10", "time": "14:30", "cur": "USD", "title": "Verbraucherpreise (CPI) Oktober", "impact": "high", "forecast": "+0,3 % m/m (Kern +0,2 %)", "previous": "+0,6 % m/m (Kern +0,3 %)", "note": "Wichtigster Termin der Woche: entscheidet mit über die Dezember-Erhöhung der Fed." },
-    { "date": "2026-11-11", "time": "", "cur": "USD", "title": "Veterans Day: US-Anleihemarkt geschlossen", "impact": "info", "forecast": null, "previous": null, "note": "Aktienmarkt offen, dünnere Liquidität." },
-    { "date": "2026-11-12", "time": "08:00", "cur": "GBP", "title": "Bruttoinlandsprodukt Q3 (1. Schätzung)", "impact": "high", "forecast": null, "previous": null, "note": "Erste Wachstumszahl nach der BoE-Erhöhung auf 4,00 %." },
-    { "date": "2026-11-12", "time": "11:00", "cur": "EUR", "title": "Bruttoinlandsprodukt Q3 (2. Schätzung)", "impact": "medium", "forecast": null, "previous": null, "note": null },
-    { "date": "2026-11-12", "time": "14:30", "cur": "USD", "title": "Erstanträge auf Arbeitslosenhilfe", "impact": "medium", "forecast": null, "previous": null, "note": null },
-    { "date": "2026-11-13", "time": "14:30", "cur": "USD", "title": "Erzeugerpreise (PPI) Oktober", "impact": "high", "forecast": null, "previous": null, "note": null },
-    { "date": "2026-11-13", "time": "21:30", "cur": "USD", "title": "CFTC-COT-Bericht (Stichtag 10.11.)", "impact": "info", "forecast": null, "previous": null, "note": null }
+    {
+      "date": "2026-11-10",
+      "time": "10:00",
+      "cur": "USD",
+      "title": "Rede Fed-Gouverneur Waller",
+      "impact": "medium",
+      "forecast": null,
+      "previous": null,
+      "note": "Bereits gehalten: unterstützt eine Dezember-Erhöhung, 50 Bp möglich."
+    },
+    {
+      "date": "2026-11-10",
+      "time": "14:30",
+      "cur": "USD",
+      "title": "Kern-Verbraucherpreise (Core CPI) m/m",
+      "impact": "high",
+      "forecast": "+0,2 %",
+      "previous": "+0,3 %",
+      "note": "Bereits veröffentlicht: +0,3 %, über der Prognose."
+    },
+    {
+      "date": "2026-11-10",
+      "time": "14:30",
+      "cur": "USD",
+      "title": "Verbraucherpreise (CPI) m/m",
+      "impact": "high",
+      "forecast": "+0,3 %",
+      "previous": "+0,6 %",
+      "note": "Bereits veröffentlicht: +0,4 %, über der Prognose. Stützt die Dezember-Erhöhung der Fed."
+    },
+    {
+      "date": "2026-11-11",
+      "time": "",
+      "cur": "USD",
+      "title": "Bank-Feiertag USA (Veterans Day)",
+      "impact": "info",
+      "forecast": null,
+      "previous": null,
+      "note": "Banken und Anleihemarkt geschlossen, dünnere Liquidität möglich."
+    },
+    {
+      "date": "2026-11-11",
+      "time": "",
+      "cur": "CAD",
+      "title": "Bank-Feiertag Kanada (Remembrance Day)",
+      "impact": "info",
+      "forecast": null,
+      "previous": null,
+      "note": "Banken geschlossen, dünnerer CAD-Handel."
+    },
+    {
+      "date": "2026-11-11",
+      "time": "10:45",
+      "cur": "EUR",
+      "title": "Rede EZB-Präsidentin Lagarde",
+      "impact": "medium",
+      "forecast": null,
+      "previous": null,
+      "note": "Hinweise zur möglichen Dezember-Erhöhung."
+    },
+    {
+      "date": "2026-11-12",
+      "time": "08:00",
+      "cur": "GBP",
+      "title": "Bruttoinlandsprodukt (BIP) m/m",
+      "impact": "high",
+      "forecast": "0,0 %",
+      "previous": "+0,1 %",
+      "note": "Wachstumsdaten nach der BoE-Erhöhung auf 4,00 %."
+    },
+    {
+      "date": "2026-11-12",
+      "time": "08:00",
+      "cur": "GBP",
+      "title": "BIP q/q (vorläufig)",
+      "impact": "medium",
+      "forecast": "+0,7 %",
+      "previous": "+0,5 %",
+      "note": null
+    },
+    {
+      "date": "2026-11-12",
+      "time": "14:30",
+      "cur": "USD",
+      "title": "Erstanträge auf Arbeitslosenhilfe",
+      "impact": "medium",
+      "forecast": "194.000",
+      "previous": "189.000",
+      "note": null
+    },
+    {
+      "date": "2026-11-12",
+      "time": "20:30",
+      "cur": "EUR",
+      "title": "Rede EZB-Präsidentin Lagarde",
+      "impact": "medium",
+      "forecast": null,
+      "previous": null,
+      "note": null
+    },
+    {
+      "date": "2026-11-13",
+      "time": "14:30",
+      "cur": "USD",
+      "title": "Kern-Erzeugerpreise (Core PPI) m/m",
+      "impact": "high",
+      "forecast": "+0,3 %",
+      "previous": "+0,7 %",
+      "note": "Nach dem heißen CPI wichtig für die Fed-Erwartungen."
+    },
+    {
+      "date": "2026-11-13",
+      "time": "14:30",
+      "cur": "USD",
+      "title": "Erzeugerpreise (PPI) m/m",
+      "impact": "high",
+      "forecast": "+0,4 %",
+      "previous": "+1,3 %",
+      "note": null
+    },
+    {
+      "date": "2026-11-13",
+      "time": "21:30",
+      "cur": "USD",
+      "title": "CFTC-COT-Bericht (Stichtag 10.11.)",
+      "impact": "info",
+      "forecast": null,
+      "previous": null,
+      "note": null
+    }
   ],
-  "termine_note": "Ausblick: FOMC-Protokoll am Mi, 18.11., 20:00 Uhr. Fed, Bank of Canada und RBNZ entscheiden am 09.12., die BoE am 17.12., die BoJ am 18.12.",
+  "termine_note": "Ausblick: RBA entscheidet am 08.12., Fed, Bank of Canada und RBNZ am 09.12., SNB am 10.12., EZB und BoE am 17.12., BoJ am 18.12. In KW 47 folgt am 20.11. der chinesische LPR-Leitzins.",
   "cot": {
     "stichtag": "2026-11-03",
     "stichtag_label": "Di, 03.11.2026",
     "published_label": "Fr, 06.11.2026",
     "next_label": "Fr, 13.11.2026, 21:30 Uhr (Stichtag 10.11.)",
     "index_weeks": 52,
-    "index_approx": true,
+    "index_approx": false,
     "entries": [
-      { "code": "USD", "name": "US-Dollar-Index", "net": 14190, "change": 69, "cot_index": 79, "extreme": null },
-      { "code": "EUR", "name": "Euro", "net": -157791, "change": -13897, "cot_index": 0, "extreme": "short" },
-      { "code": "GBP", "name": "Britisches Pfund", "net": -59821, "change": 19593, "cot_index": 45, "extreme": null },
-      { "code": "JPY", "name": "Japanischer Yen", "net": 102321, "change": 730, "cot_index": 94, "extreme": "long" },
-      { "code": "CHF", "name": "Schweizer Franken", "net": -16589, "change": 3460, "cot_index": 100, "extreme": "long" },
-      { "code": "CAD", "name": "Kanadischer Dollar", "net": -41775, "change": 24649, "cot_index": 64, "extreme": null },
-      { "code": "AUD", "name": "Australischer Dollar", "net": -129457, "change": -1142, "cot_index": 0, "extreme": "short" },
-      { "code": "NZD", "name": "Neuseeland-Dollar", "net": -60015, "change": -2325, "cot_index": 7, "extreme": "short" },
-      { "code": "BTC", "name": "Bitcoin (CME)", "net": 2230, "change": null, "cot_index": null, "extreme": null }
+      {
+        "code": "USD",
+        "name": "US-Dollar-Index",
+        "net": 14190,
+        "change": 69,
+        "cot_index": 79,
+        "extreme": null
+      },
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "net": -157791,
+        "change": -13897,
+        "cot_index": 0,
+        "extreme": "short"
+      },
+      {
+        "code": "GBP",
+        "name": "Britisches Pfund",
+        "net": -59821,
+        "change": 19593,
+        "cot_index": 51,
+        "extreme": null
+      },
+      {
+        "code": "JPY",
+        "name": "Japanischer Yen",
+        "net": 102321,
+        "change": 730,
+        "cot_index": 94,
+        "extreme": "long"
+      },
+      {
+        "code": "CHF",
+        "name": "Schweizer Franken",
+        "net": -16589,
+        "change": 3460,
+        "cot_index": 100,
+        "extreme": "long"
+      },
+      {
+        "code": "CAD",
+        "name": "Kanadischer Dollar",
+        "net": -41775,
+        "change": 24649,
+        "cot_index": 64,
+        "extreme": null
+      },
+      {
+        "code": "AUD",
+        "name": "Australischer Dollar",
+        "net": -129457,
+        "change": -1142,
+        "cot_index": 0,
+        "extreme": "short"
+      },
+      {
+        "code": "NZD",
+        "name": "Neuseeland-Dollar",
+        "net": -60015,
+        "change": -2325,
+        "cot_index": 7,
+        "extreme": "short"
+      },
+      {
+        "code": "BTC",
+        "name": "Bitcoin (CME)",
+        "net": 2230,
+        "change": -490,
+        "cot_index": 64,
+        "extreme": null
+      }
     ],
     "notes": [
-      "Netto = Long minus Short der Großspekulanten (Non-Commercials, Legacy Futures only). USD = ICE US-Dollar-Index, BTC = CME-Bitcoin-Futures.",
-      "COT-Index = Lage der Netto-Position zwischen 52-Wochen-Tief (0 %) und 52-Wochen-Hoch (100 %). ⚠️ = unter 20 % oder über 80 %. Diese Woche aus den verfügbaren Wochenwerten genähert.",
-      "CHF ist trotz Index 100 % netto short: „oberes Extrem“ heißt hier, so wenig short wie seit einem Jahr nicht.",
-      "BTC: Veränderung zur Vorwoche nicht verfügbar. Die CME-Positionen sind durch Basis-Trades verzerrt."
+      "Netto = Long minus Short der Großspekulanten (Non-Commercials, Legacy, Futures only). USD = ICE US-Dollar-Index, BTC = CME-Bitcoin-Futures.",
+      "COT-Index = Lage der Netto-Position zwischen 52-Wochen-Tief (0 %) und 52-Wochen-Hoch (100 %). Extrem = über 80 % (Long) oder unter 20 % (Short). Basis: 52 Wochen.",
+      "CHF ist trotz Index 100 % netto short (−16.589): „oberes Extrem“ heißt hier, so wenig short wie seit einem Jahr nicht. EUR, AUD und NZD stehen am Short-Extrem, JPY am Long-Extrem (94 %).",
+      "BTC: Die CME-Positionen können durch Basis-Trades verzerrt sein."
     ]
   },
   "bias": [
     {
-      "asset": "GBP", "name": "Britisches Pfund", "bias": "LONG", "score": 2,
+      "asset": "GBP",
+      "name": "Britisches Pfund",
+      "bias": "LONG",
+      "score": 2,
       "factors": {
-        "cot": { "score": 1, "label": "Shorts eingedeckt (+19.593)" },
-        "cb": { "score": 1, "label": "BoE hawkish (4,00 %)" },
-        "regime": { "score": 0, "label": "Risk-off: neutral" }
+        "cot": {
+          "score": 1,
+          "label": "Shorts eingedeckt (+19.593)"
+        },
+        "cb": {
+          "score": 1,
+          "label": "BoE hawkish (4,00 %)"
+        },
+        "regime": {
+          "score": 0,
+          "label": "Regime neutral"
+        }
       },
       "warning": null,
-      "reason": "Die BoE hat am 05.11. auf 4,00 % erhöht, und die Spekulanten decken kräftig Shorts ein."
+      "reason": "Die BoE hob am 05.11. auf 4,00 % an (8:1, ein Mitglied wollte 4,25 %), und Spekulanten decken Pfund-Shorts ein."
     },
     {
-      "asset": "USD", "name": "US-Dollar", "bias": "LONG", "score": 2,
+      "asset": "CAD",
+      "name": "Kanadischer Dollar",
+      "bias": "LONG",
+      "score": 2,
       "factors": {
-        "cot": { "score": 0, "label": "kaum verändert (+69)" },
-        "cb": { "score": 1, "label": "Fed hawkish (Dez. ~84 %)" },
-        "regime": { "score": 1, "label": "Risk-off: sicherer Hafen" }
+        "cot": {
+          "score": 1,
+          "label": "Shorts eingedeckt (+24.649)"
+        },
+        "cb": {
+          "score": 1,
+          "label": "BoC hawkish (2,50 %)"
+        },
+        "regime": {
+          "score": 0,
+          "label": "Regime neutral"
+        }
       },
       "warning": null,
-      "reason": "Hawkishe Fed mit eingepreister Dezember-Erhöhung und Risk-off stützen den Dollar."
+      "reason": "Die BoC erhöhte am 28.10. auf 2,50 % und hält weitere Schritte offen. Spekulanten decken kräftig Shorts ein."
     },
     {
-      "asset": "JPY", "name": "Japanischer Yen", "bias": "LONG", "score": 2,
+      "asset": "USD",
+      "name": "US-Dollar",
+      "bias": "NEUTRAL",
+      "score": 1,
       "factors": {
-        "cot": { "score": 0, "label": "kaum verändert (+730)" },
-        "cb": { "score": 1, "label": "BoJ hawkish (Dez.-Erhöhung erwartet)" },
-        "regime": { "score": 1, "label": "Risk-off: sicherer Hafen" }
+        "cot": {
+          "score": 0,
+          "label": "kaum verändert (+69)"
+        },
+        "cb": {
+          "score": 1,
+          "label": "Fed hawkish (Dez. ~100 % Erhöhung eingepreist)"
+        },
+        "regime": {
+          "score": 0,
+          "label": "Regime neutral"
+        }
+      },
+      "warning": null,
+      "reason": "Die Fed steht vor der Dezember-Erhöhung (heißer CPI, Waller offen für 50 Bp), aber COT ist unverändert und das Regime neutral."
+    },
+    {
+      "asset": "JPY",
+      "name": "Japanischer Yen",
+      "bias": "NEUTRAL",
+      "score": 1,
+      "factors": {
+        "cot": {
+          "score": 0,
+          "label": "kaum verändert (+730)"
+        },
+        "cb": {
+          "score": 1,
+          "label": "BoJ hawkish (Dez.-Erhöhung signalisiert)"
+        },
+        "regime": {
+          "score": 0,
+          "label": "Regime neutral"
+        }
       },
       "warning": "COT-Long-Extrem (≈ 94 %): Positionen überfüllt, Rücksetzer möglich.",
-      "reason": "Die BoJ signalisiert eine Erhöhung im Dezember, Risk-off stützt den Yen."
+      "reason": "Die BoJ signalisiert eine Erhöhung im Dezember, doch die Positionen sind überfüllt und das Regime gibt keinen Haven-Schub."
     },
     {
-      "asset": "CHF", "name": "Schweizer Franken", "bias": "LONG", "score": 2,
+      "asset": "CHF",
+      "name": "Schweizer Franken",
+      "bias": "NEUTRAL",
+      "score": 1,
       "factors": {
-        "cot": { "score": 1, "label": "Shorts eingedeckt (+3.460)" },
-        "cb": { "score": 0, "label": "SNB neutral (0 %)" },
-        "regime": { "score": 1, "label": "Risk-off: sicherer Hafen" }
+        "cot": {
+          "score": 1,
+          "label": "Shorts eingedeckt (+3.460)"
+        },
+        "cb": {
+          "score": 0,
+          "label": "SNB neutral (0 %)"
+        },
+        "regime": {
+          "score": 0,
+          "label": "Regime neutral"
+        }
       },
-      "warning": "COT am oberen Extrem (≈ 100 %): wenig Platz für weitere Short-Eindeckung.",
-      "reason": "Sicherer Hafen im Risk-off und Short-Eindeckung, die SNB bei 0 % bremst den Anstieg."
+      "warning": "COT-Long-Extrem (≈ 100 %), netto aber noch short: wenig Platz für weitere Short-Eindeckung.",
+      "reason": "Short-Eindeckung stützt, die SNB steht bei 0 % ohne Straffungssignal und das Regime liefert keinen Haven-Schub."
     },
     {
-      "asset": "CAD", "name": "Kanadischer Dollar", "bias": "NEUTRAL", "score": 0,
+      "asset": "EUR",
+      "name": "Euro",
+      "bias": "NEUTRAL",
+      "score": 0,
       "factors": {
-        "cot": { "score": 1, "label": "Shorts eingedeckt (+24.649)" },
-        "cb": { "score": 0, "label": "BoC neutral (2,50 %)" },
-        "regime": { "score": -1, "label": "Risk-off: Rohstoffwährung" }
-      },
-      "warning": null,
-      "reason": "Kräftige Short-Eindeckung, aber fallender Ölpreis und Risk-off bremsen, die BoC wartet nach ihrer Erhöhung ab."
-    },
-    {
-      "asset": "EUR", "name": "Euro", "bias": "NEUTRAL", "score": 0,
-      "factors": {
-        "cot": { "score": -1, "label": "neue Shorts (−13.897)" },
-        "cb": { "score": 1, "label": "EZB hawkish (Dez.-Erhöhung signalisiert)" },
-        "regime": { "score": 0, "label": "Risk-off: neutral" }
+        "cot": {
+          "score": -1,
+          "label": "neue Shorts (−13.897)"
+        },
+        "cb": {
+          "score": 1,
+          "label": "EZB hawkish (Dez.-Erhöhung ~82 % eingepreist)"
+        },
+        "regime": {
+          "score": 0,
+          "label": "Regime neutral"
+        }
       },
       "warning": "COT-Short-Extrem (≈ 0 %): Squeeze-Gefahr.",
-      "reason": "Hawkishe EZB gegen weiter wachsende Rekord-Shorts der Spekulanten, daher kein klares Signal."
+      "reason": "Die EZB hält die Dezember-Erhöhung offen, doch Spekulanten bauen weiter Shorts auf (−13.897, COT-Index 0 %)."
     },
     {
-      "asset": "AUD", "name": "Australischer Dollar", "bias": "NEUTRAL", "score": -1,
+      "asset": "AUD",
+      "name": "Australischer Dollar",
+      "bias": "NEUTRAL",
+      "score": 0,
       "factors": {
-        "cot": { "score": 0, "label": "kaum verändert (−1.142)" },
-        "cb": { "score": 0, "label": "RBA neutral (Erhöhung, vorsichtiger Ausblick)" },
-        "regime": { "score": -1, "label": "Risk-off: Rohstoffwährung" }
+        "cot": {
+          "score": 0,
+          "label": "kaum verändert (−1.142)"
+        },
+        "cb": {
+          "score": 0,
+          "label": "RBA neutral (4,85 %, Straffungswarnung gestrichen)"
+        },
+        "regime": {
+          "score": 0,
+          "label": "Regime neutral"
+        }
       },
       "warning": "COT-Short-Extrem (≈ 0 %): Squeeze-Gefahr.",
-      "reason": "Risk-off belastet, die RBA-Erhöhung auf 4,85 % kam weniger hawkish an als erwartet."
+      "reason": "Die RBA erhöhte am 03.11. auf 4,85 % (6:3), strich aber die Warnung vor weiteren Erhöhungen. COT kaum verändert."
     },
     {
-      "asset": "BTC", "name": "Bitcoin", "bias": "SHORT", "score": -2,
+      "asset": "NZD",
+      "name": "Neuseeland-Dollar",
+      "bias": "NEUTRAL",
+      "score": -1,
       "factors": {
-        "cot": { "score": 0, "label": "CME leicht long, ohne Vorwochenwert" },
-        "cb": { "score": -1, "label": "Fed hawkish: Gegenwind" },
-        "regime": { "score": -1, "label": "Risk-off: Risiko-Anlage" }
-      },
-      "warning": null,
-      "reason": "Hawkishe Fed und Risk-off belasten, dazu ETF-Abflüsse und ein Kurs unter SMA20 und SMA50."
-    },
-    {
-      "asset": "NZD", "name": "Neuseeland-Dollar", "bias": "SHORT", "score": -2,
-      "factors": {
-        "cot": { "score": 0, "label": "kaum verändert (−2.325)" },
-        "cb": { "score": -1, "label": "RBNZ dovish (überraschend gehalten)" },
-        "regime": { "score": -1, "label": "Risk-off: Rohstoffwährung" }
+        "cot": {
+          "score": 0,
+          "label": "kaum verändert (−2.325)"
+        },
+        "cb": {
+          "score": -1,
+          "label": "RBNZ dovish (erwartete Erhöhung ausgeblieben, 2,75 %)"
+        },
+        "regime": {
+          "score": 0,
+          "label": "Regime neutral"
+        }
       },
       "warning": "COT-Short-Extrem (≈ 7 %): Squeeze-Gefahr.",
-      "reason": "Die RBNZ hielt den Zins überraschend bei 2,75 %, Risk-off belastet zusätzlich."
+      "reason": "Die RBNZ hielt am 28.10. überraschend bei 2,75 % (4:3) statt zu erhöhen, und Spekulanten bleiben stark short."
+    },
+    {
+      "asset": "BTC",
+      "name": "Bitcoin",
+      "bias": "SHORT",
+      "score": -2,
+      "factors": {
+        "cot": {
+          "score": -1,
+          "label": "Longs abgebaut (−490)"
+        },
+        "cb": {
+          "score": -1,
+          "label": "Fed hawkish: Gegenwind"
+        },
+        "regime": {
+          "score": 0,
+          "label": "Regime neutral"
+        }
+      },
+      "warning": null,
+      "reason": "Hawkishe Fed, ETF-Abflüsse (−1,28 Mrd. $ in KW 45), Kurs unter SMA20 und SMA50 und schrumpfende CME-Netto-Longs."
     }
   ],
   "pairs": [
     {
-      "rank": 1, "pair": "GBP/NZD", "direction": "LONG", "divergence": 4, "long_leg": "GBP", "short_leg": "NZD",
-      "reason": "Klarste Zins-Divergenz der Woche: Die BoE erhöht, die RBNZ hält überraschend still. Dazu decken Spekulanten Pfund-Shorts ein.",
-      "warning": "NZD-Shorts bereits extrem (COT-Index ≈ 7 %)."
+      "rank": 1,
+      "pair": "GBP/NZD",
+      "direction": "LONG",
+      "divergence": 3,
+      "long_leg": "GBP",
+      "short_leg": "NZD",
+      "reason": "Die BoE erhöht auf 4,00 %, die RBNZ hielt überraschend bei 2,75 %. Spekulanten decken Pfund-Shorts ein (+19.593).",
+      "warning": "NZD-Shorts bereits extrem (COT-Index ≈ 7 %): Squeeze-Gefahr."
     },
     {
-      "rank": 2, "pair": "NZD/USD", "direction": "SHORT", "divergence": 4, "long_leg": "USD", "short_leg": "NZD",
-      "reason": "Hawkishe Fed gegen dovishe RBNZ, Risk-off belastet den Kiwi zusätzlich.",
-      "warning": "NZD-Shorts bereits extrem (COT-Index ≈ 7 %)."
+      "rank": 2,
+      "pair": "NZD/CAD",
+      "direction": "SHORT",
+      "divergence": 3,
+      "long_leg": "CAD",
+      "short_leg": "NZD",
+      "reason": "Die BoC erhöhte auf 2,50 %, die RBNZ hielt überraschend still. Spekulanten decken CAD-Shorts kräftig ein (+24.649).",
+      "warning": "NZD-Shorts bereits extrem (COT-Index ≈ 7 %): Squeeze-Gefahr."
     },
     {
-      "rank": 3, "pair": "GBP/AUD", "direction": "LONG", "divergence": 3, "long_leg": "GBP", "short_leg": "AUD",
-      "reason": "Pfund mit Rückenwind von BoE und COT, der Aussie leidet unter Risk-off und einer vorsichtigen RBA.",
+      "rank": 3,
+      "pair": "AUD/CAD",
+      "direction": "SHORT",
+      "divergence": 2,
+      "long_leg": "CAD",
+      "short_leg": "AUD",
+      "reason": "Die BoC hob an, die RBA strich nach der 6:3-Erhöhung ihre Straffungswarnung. Spekulanten decken CAD-Shorts ein.",
       "warning": "AUD-Shorts auf Jahresextrem (COT-Index ≈ 0 %): Squeeze-Gefahr."
     }
   ],
   "btc_pair": {
-    "pair": "BTC/USD", "direction": "SHORT", "divergence": 4, "long_leg": "USD", "short_leg": "BTC",
-    "reason": "Hawkishe Fed und Risk-off gegen Bitcoin, dazu 1,28 Mrd. $ ETF-Abflüsse in KW 45 und ein Kurs unter SMA20 und SMA50.",
+    "pair": "BTC/USD",
+    "direction": "SHORT",
+    "divergence": 3,
+    "long_leg": "USD",
+    "short_leg": "BTC",
+    "reason": "Hawkishe Fed und ETF-Abflüsse (−1,28 Mrd. $ in KW 45) belasten Bitcoin, der Kurs liegt unter SMA20 und SMA50.",
     "warning": null
   },
   "sources": [
-    { "label": "CFTC – Commitments of Traders (Legacy, Futures only)", "url": "https://www.cftc.gov/MarketReports/CommitmentsofTraders/index.htm", "date": "Stichtag 03.11.2026" },
-    { "label": "FXStreet/InsiderWeek – COT report, 6. November 2026", "url": "https://www.fxstreet.com/analysis/cot-report-november-6-2026-202611082146", "date": "08.11.2026" },
-    { "label": "Federal Reserve – FOMC-Kalender und Statements", "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm", "date": "28.10.2026" },
-    { "label": "CME FedWatch Tool", "url": "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html", "date": "10.11.2026" },
-    { "label": "U.S. Bureau of Labor Statistics – Employment Situation", "url": "https://www.bls.gov/news.release/empsit.nr0.htm", "date": "06.11.2026" },
-    { "label": "FOREX.com – COT-Analyse (DXY, RBA)", "url": "https://www.forex.com/en/news-and-analysis/extreme-euro-shorts-meet-renewed-us-dollar-strength-cot-report/?amp=true", "date": "07.11.2026" },
-    { "label": "Trading Economics – US-Dollar-Index", "url": "https://tradingeconomics.com/united-states/currency/news/597082", "date": "02.11.2026" },
-    { "label": "Cboe – VIX", "url": "https://www.cboe.com/tradable_products/vix/", "date": "06.11.2026" },
-    { "label": "Fortune – Bitcoin-Kurs", "url": "https://fortune.com/article/price-of-bitcoin-11-06-2026/", "date": "06.11.2026" },
-    { "label": "CoinGecko – Bitcoin", "url": "https://www.coingecko.com/en/coins/bitcoin", "date": "07.11.2026" },
-    { "label": "EZB – geldpolitische Beschlüsse", "url": "https://www.ecb.europa.eu/press/govcdec/mopo/html/index.en.html", "date": "29.10.2026" },
-    { "label": "Bank of England – Monetary Policy Summary", "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/monetary-policy-summary-and-minutes", "date": "05.11.2026" },
-    { "label": "Bank of Japan – geldpolitische Beschlüsse", "url": "https://www.boj.or.jp/en/mopo/mpmdeci/index.htm", "date": "30.10.2026" },
-    { "label": "Reserve Bank of Australia – Geldpolitik", "url": "https://www.rba.gov.au/monetary-policy/", "date": "03.11.2026" },
-    { "label": "ForexFactory – Wirtschaftskalender", "url": "https://www.forexfactory.com/calendar", "date": "KW 46/2026" }
+    {
+      "label": "CFTC – Commitments of Traders (Legacy, Futures only)",
+      "url": "https://www.cftc.gov/MarketReports/CommitmentsofTraders/index.htm",
+      "date": "Stichtag 03.11.2026"
+    },
+    {
+      "label": "Yahoo Finance – Marktdaten (DXY, S&P 500, VIX, US-Rendite, Gold, USD/JPY, BTC)",
+      "url": "https://finance.yahoo.com/",
+      "date": "10.11.2026"
+    },
+    {
+      "label": "ForexFactory – Wirtschaftskalender",
+      "url": "https://www.forexfactory.com/calendar",
+      "date": "KW 46"
+    },
+    {
+      "label": "ActionForex – Dollar, Waller und CME FedWatch nach CPI",
+      "url": "https://www.actionforex.com/action-insight/market-overview/660473-dollar-rebounds-as-fed-wallers-hawkish-warning-and-hot-cpi-lift-fed-rate-expectations/",
+      "date": "10.11.2026"
+    },
+    {
+      "label": "Bloomberg – Waller unterstützt Dezember-Erhöhung",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-10/fed-s-waller-backs-december-rate-hike-says-open-to-larger-move",
+      "date": "10.11.2026"
+    },
+    {
+      "label": "CNBC – Fed-Entscheid Oktober 2026",
+      "url": "https://www.cnbc.com/2026/10/28/fed-interest-rate-decision-october-2026.html",
+      "date": "28.10.2026"
+    },
+    {
+      "label": "Babypips – EZB-Entscheid Oktober 2026",
+      "url": "https://www.babypips.com/analysis/headline-hold-now-hike-later-ecb-decision-october-2026-10-30",
+      "date": "30.10.2026"
+    },
+    {
+      "label": "Forexuro – BoE-Entscheid November 2026",
+      "url": "https://forexuro.com/articles/boe-rate-decision-november-2026-result",
+      "date": "05.11.2026"
+    },
+    {
+      "label": "Japan Times – BoJ Summary of Opinions",
+      "url": "https://www.japantimes.co.jp/business/2026/11/10/economy/boj-summary-opinions-october/",
+      "date": "10.11.2026"
+    },
+    {
+      "label": "Swiss National Bank – Zusammenfassung der Lagebeurteilung",
+      "url": "https://www.snb.ch/en/publications/communication/summaries/zus_20261022",
+      "date": "24.09.2026"
+    },
+    {
+      "label": "Bank of Canada – Zinsentscheid",
+      "url": "https://www.bankofcanada.ca/2026/10/fad-press-release-2026-10-28/",
+      "date": "28.10.2026"
+    },
+    {
+      "label": "Reserve Bank of Australia – Monetary Policy Board Statement",
+      "url": "https://www.rba.gov.au/media-releases/2026/mr-26-30.html",
+      "date": "03.11.2026"
+    },
+    {
+      "label": "investingLive – RBNZ hält OCR bei 2,75 %",
+      "url": "https://investinglive.com/central-banks/rbnz-holds-ocr-at-2-75-in-surprise-4-3-vote-says-tighter-policy-still-likely/",
+      "date": "28.10.2026"
+    },
+    {
+      "label": "Farside Investors via BigGo – Bitcoin-ETF-Flüsse",
+      "url": "https://finance.biggo.com/news/17c79f0d-b780-4840-b0d9-ef2730cf8bcf",
+      "date": "10.11.2026"
+    },
+    {
+      "label": "Cointelegraph – Bitcoin-ETF-Abflüsse und Fear & Greed (alternative.me)",
+      "url": "https://cointelegraph.com/markets/blackrock-ibit-bitcoin-etf-outflows",
+      "date": "10.11.2026"
+    }
   ],
   "disclaimer": "Der Bias ist nur ein Richtungsfilter für die eigene technische Analyse (H4 → H1 → M15) und keine Einstiegsempfehlung. Keine Anlageberatung."
 }
